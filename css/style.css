@@ -1,0 +1,139 @@
+html{
+  width: 1200px;
+  height: 2400px;
+  padding: 0;
+  background-color: aqua;
+}
+
+.test{
+  display: center;
+}
+@font-face{
+  font-family:'華康行書體';
+  src:url(/font/華康行書體.TTF)format("truetype"),
+      url(/font/華康行書體.woff)format("woff");
+}
+@font-face{
+  font-family: 'Gabriola';
+  src: url(/font/Gabriola.ttf)format("truetype"),
+       url(/font/Gabriola.woff)format("woff");
+}
+/* =======標題列======= */
+
+.Title-column{
+  margin-top: 0;
+  width: 1200px;
+  height: 60px;
+  background-color:#364FA1;
+}
+.Title-nav{
+  padding-right: 22px;
+  padding-top: 22px
+}
+
+.Title-nav-list{
+  display: inline;
+  margin-left: 580.5px; 
+;
+}
+
+.title-nav-btn{
+  font-family:'華康行書體';
+  font-size: 16px;
+  color: #FEFEFE;
+  text-decoration: none;
+  border-right-style:solid;
+  border-width: 0.5px;
+  padding: 0;
+  margin-right: 9px;
+}
+
+.title-nav-btn-en{
+  font-family:'Gabriola';
+  font-size: 16px;
+  color: #FEFEFE;
+  text-decoration: none;
+  margin-right: 22px;
+}
+
+/* =======second標題列======= */
+.Second-column{
+  width: 1200px;
+  height: 105px;
+  background-color:#FFFFFF;
+  display: flex;
+}
+
+.NTUT-logo{
+   width: 349pt;
+  height: 68pt; 
+  margin-left: 70.5px;
+  margin-top: 18.683px;
+}
+.Second-Title-nav{
+margin-left: 30.5px;
+padding-top: 42.683px
+}
+
+.Second-Title-nav-list{
+  display: inline;
+}
+
+.Second-title-nav-btn{
+  font-family:'華康行書體';
+  font-size: 16pt;
+  /* font-weight: bold; */
+  color: #221814;
+  text-decoration: none;
+  /* border-right-style:solid; */
+  /* border-width: 0.5px; */
+  /* padding: 0; */
+  margin-right: -6px;
+}
+/* =======third標題列======= */
+.Third-column{
+  width: 1200px;
+  height: 460px;
+  background-color:#FFFFFF;
+}
+
+.NTUT-header-logo{
+  size: auto;
+}
+
+
+/* =======fourth標題列======= */
+.Fourth-column{
+  width: 1200px;
+  height: 1775px;
+  padding-top: 0px;
+  background-color:#FFFFFF;
+
+}
+
+.NEWS-title{
+  padding: 0px;
+  flex-direction: column;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+         
+}
+.title-ch{
+  padding: 0;
+
+  margin-top: 50.635px;
+  font-family:'華康行書體';
+  font-size: 36px;
+
+}
+
+.title-en{
+  padding: 0;
+  font-family:'Gabriola';
+  font-size: 36px;
+  margin-top: -55px;
+}
