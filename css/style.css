@@ -1,7 +1,7 @@
 html{
   width: 1200px;
   height: 2400px;
-  padding: 0;
+  padding: 0px auto;
   background-color: #FEFEFE;
   margin:0px auto;
 }
@@ -253,9 +253,53 @@ padding: 0;
   height: 744px;
   margin-top: 25.22px;
   background-color: #FEFEFE;
+
+}
+.row {
+	display: flex;
+	flex-wrap: wrap;
+  margin: 0;
+}
+
+
+.col {
+	padding: 0 15px;
+  width: calc(100%/4);
+  height: 339.67px;
+}
+
+/* Gallery Style */
+.img {
+	list-style: none;
+  margin-top: 0px;
+  padding: 0;
+  justify-content: space-around;
+  
 }
 .NEWS-content-img{
   width: 300px;
   height: 180px;
   border: 0;
+  margin-bottom: 19.987px;
+}
+
+.NEWS-content-text{
+  width: 29.485px;
+  height: 54.849px;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 17px;
+  /* margin-top: 19.987px; */
+  margin-bottom: 105px;
+  color: #221814;
+}
+
+.title-row{
+  font-family: '華康行書體';
+  font-size: 36px;
+  width: 1200px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24.22px;
+  display: flex;
 }
