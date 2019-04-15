@@ -1,0 +1,563 @@
+html{
+  width: 1200px;
+  height: 2400px;
+  padding: 0px auto;
+  background-color: #FEFEFE;
+  margin:0px auto;
+  border: 0px;
+}
+
+.administration-html{
+  height: 1800px;
+}
+
+.test{
+  display: center;
+}
+@font-face{
+  font-family:'華康行書體';
+  src:url(/font/華康行書體.TTF)format("truetype"),
+      url(/font/華康行書體.woff)format("woff");
+}
+@font-face{
+  font-family: 'Gabriola';
+  src: url(/font/Gabriola.ttf)format("truetype"),
+       url(/font/Gabriola.woff)format("woff");
+}
+
+/* =======標題列======= */
+
+.Title-column{
+  margin-top: 0;
+  width: 1200px;
+  height: 60px;
+  background-color:#364FA1;
+  position: fixed;
+}
+.Title-nav{
+  padding-right: 22px;
+  padding-top: 22px
+}
+
+.Title-nav-list{
+  display: inline;
+  margin-left: 580.5px; 
+;
+}
+
+.title-nav-btn{
+  font-family:'華康行書體';
+  font-size: 16px;
+  color: #FEFEFE;
+  text-decoration: none;
+  border-right-style:solid;
+  border-width: 0.5px;
+  padding: 0;
+  margin-right: 9px;
+}
+
+.title-nav-btn-en{
+  font-family:'Gabriola';
+  font-size: 16px;
+  color: #FEFEFE;
+  text-decoration: none;
+  margin-right: 22px;
+}
+
+/* =======second標題列======= */
+.Second-column{
+  width: 1200px;
+  height: 105px;
+  background-color:#FEFEFE;
+  display: flex;
+  padding-top: 55px;
+}
+.NTUT-logo-size{
+  width: 349px;
+  height: 68px; 
+  margin-left: 70.5px;
+  margin-top: 18.683px;
+}
+.NTUT-logo{
+  width: 100%;
+  height: 100%; 
+}
+
+.Second-Title-nav{
+width: 720px;
+height: 20px;
+margin-left: 30.5px;
+margin-top: 42.683px;
+padding: 0;
+}
+
+.Second-Title-nav-list{
+  display: inline;
+  white-space:nowrap; 
+}
+
+.Second-title-nav-btn{
+  font-family:'華康行書體';
+  font-size: 16pt;
+  /* font-weight: bold; */
+  color: #221814;
+  text-decoration: none;
+  /* border-right-style:solid; */
+  /* border-width: 0.5px; */
+  /* padding: 0; */
+  margin-right: -6px;
+}
+/* =======third標題列======= */
+.Third-column{
+  width: 1200px;
+  height: 460px;
+  background-color:#FEFEFE;
+}
+
+.NTUT-header-logo{
+  size: auto;
+  width: 100%;
+}
+
+
+/* =======fourth標題列======= */
+.Fourth-column{
+  width: 1200px;
+  height: 1780px;
+  background-color:rgba(254, 254, 254,0.1);
+  display: -webkit-flex;
+  /* display: flex; */
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  background-image: url(/img/紅樓.jpg);
+  background-repeat:no-repeat;
+  /* background-attachment:fixed; */
+  background-size: 80%,80%;
+  background-position:right bottom;
+}
+
+.NEWS-title{
+  width: 235px;
+  height: 59.385px;
+  margin-top: 50.635px;
+  flex-direction: column;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+         
+}
+.title-ch{
+  height: 29.679px;
+  width: auto;
+  font-family:'華康行書體';
+  font-size: 36px;
+  padding: 0;
+  margin: 0;
+}
+.Demarcation{
+  height: 29.679px;
+  width:235px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.title-en{
+  height: 29.679px;
+  width: auto;
+  margin:0;
+  font-family:'Gabriola';
+  font-size: 36px;
+  padding: 0;
+}
+/*  */
+.Bulletin-Board{
+  width: 1200px;
+  height: 366px;
+  margin-top: 40px;   /* zero point=8px */
+  background-color: rgba(254, 254, 254,0.1);
+  display: flex;
+}
+
+.option-list{
+  width: 190px;
+  height: 270px;
+  margin-top: 9px;
+  margin-left: 343px;
+  background-color:rgba(254, 254, 254,0.1);
+
+}
+
+.option-list-btn{
+  width: 144px;
+  height: 51px;
+  font-family: '華康行書體';
+  font-size: 36px;
+  text-align: center;
+  margin-top: 35.725px;
+  margin-right: 49.774px;
+  padding: 0;
+}
+
+.Board-content{
+  /* width: 626.584px;
+  height:358.109333px ; */
+  width: 496.938px;
+  height: 366px; /*+114 to more button*/
+  background-color: rgba(254, 254, 254,0.1);
+  
+}
+
+.Board-content-zone{
+  width: 496.938px;
+  height: 268.582px;
+  /* margin-top: 0; */
+  background-color: rgba(254, 254, 254,0.1);
+}
+
+.Board-content-date{
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 26px;
+  margin: 0;
+  color: #3aa066;
+}
+
+.Board-content-text{
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 26px;
+  margin: 0;
+  margin-bottom: 28px;
+  color: #221814;
+  
+}
+
+.More-button{
+  font-family:'Gabriola';
+  font-size: 36pt;
+  text-align: center;
+  line-height:50px;
+  color: #FEFEFE;
+  width: 123px;
+  height: 50px;
+  margin-top: 47.436px;
+  margin-left: 373.938px;
+  background-color: #3aa066;
+}
+
+.NEWS-title2{
+  width: 235px;
+  height: 59.385px;
+  margin-top:0;
+  flex-direction: column;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+         
+}
+
+.NEWS-content{
+  width: 1200px;
+  height: 724px;
+  margin-top: 25.22px;
+  background-color: rgba(254, 254, 254,0.1);
+
+}
+.row {
+	display: flex;
+	flex-wrap: wrap;
+  margin: 0;
+}
+
+
+.col {
+	padding: 0 15px;
+  width: calc(100%/4);
+  height: 334.67px;
+}
+
+/* Gallery Style */
+.img {
+	list-style: none;
+  margin-top: 0px;
+  padding: 0;
+  justify-content: space-around;
+}
+.NEWS-content-img{
+  width: 300px;
+  height: 180px;
+  border: 0;
+  margin-bottom: 19.987px;
+}
+
+.NEWS-content-text{
+  width: 29.485px;
+  height: 54.849px;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 17px;
+  /* margin-top: 19.987px; */
+  margin-bottom: 90px;
+  color: #221814;
+}
+
+.title-row{
+  font-family: '華康行書體';
+  font-size: 36px;
+  width: 1200px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24.22px;
+  display: flex;
+}
+
+.Link-column{
+  width: 1200px;
+  height: 336px;
+  background-color: rgba(254, 254, 254,0.1);
+
+}
+
+.Link-content-zone{
+  width: 1200px;
+  height: 270px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+}
+.Link-content-item{
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 20px;
+  color: #221814;
+  height: 230.56px;
+  padding: 0;
+  margin: 0;
+}
+.link1{
+  width: 147.242px;
+  margin-left: 74.372px;
+}
+.link2{
+  width: 173.227px;
+  margin-left: 36px;
+}
+.link3{
+  width: 256.328px;
+  margin-left: 45px;
+}
+.link4{
+  width: 127.828px;
+  height: 182.56px;
+  margin-left: 72px;
+}
+.link5{
+  width: 173.227px;
+  height: 134.56px;
+  margin-left: 34.812px;
+}
+
+.Link-content-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.Link-content-text{
+  margin: 0px;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.footer{
+  width: 1200px;
+  height: 116px;
+  background-color:#3aa066;
+  margin: 0;
+  padding: 0; 
+}
+.footer-link{
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  padding-top:30px;
+  margin-left: 74.372px;
+}
+.footer-btn{
+  color: #FEFEFE;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 5px;
+}
+.copyright{
+  color: #FEFEFE;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  margin-top: 9px;
+  margin-left: 74.372px;
+}
+
+.icon-zone{
+padding: 0;
+margin-right: 80.949px;
+margin-left: 64.782px;
+margin-top: 36px;
+margin-bottom: 38.9px;
+}
+.icon{
+  width: 36px;
+  height: 36px;
+  margin-left: 27.496px;
+}
+
+
+.line-column{
+  height: 1;
+  width: 1200px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.bottom-line{
+  margin: 0;
+  padding: 0;
+  width: 225px;
+}
+.line1{
+  margin: 0;
+  margin-top:-11px;
+  width: 63px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+.line2{
+  margin: 0;
+  margin-top:3px;
+}
+.line2-center{
+  display: flex;
+  justify-content: center;
+}
+.line3{
+  margin: 0;
+  margin-top: -20px;
+  margin-left: 86.5px;
+}
+.line4{
+  margin-top: -20px;
+  margin-left: 373px;
+}
+.line5{
+  margin-top: -20px;
+  margin-left: 288px;
+}
+.line6{
+  margin-top: -20px;
+  margin-left: 330px;
+}
+
+.FAP-btn{
+  position: fixed;
+}
+
+/* 底下是行政單位所使用 不包含首頁的相似元件 */
+
+.administration-column{
+  height: 1583px;
+  background-color: #FEFEFE;
+  margin-top: 54.948px;
+}
+
+.administration-content{
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background-color:#FEFEFE;
+}
+
+.administration-context-grid{
+	list-style: none;
+  margin-top: 0px;
+  padding: 0;
+
+}
+.administration-row{
+  display: flex;
+	flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  
+}
+.administration-col{
+  width: calc(100%/2);
+  /* width: 480px;
+  height: 312px; */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 48px;
+}
+
+.administration-context-item{
+  width: 480px;
+  height: 325px;
+  background-color: #FEFEFE;
+}
+
+.administration-item-text{
+  font-size: 30px;
+  margin-bottom: 15.202px;
+
+}
+
+.administration-address{
+  color: #221814;
+  font-size: 16px;
+  font-family:  sans-serif,'華康行書體';
+  white-space:nowrap; 
+  margin: 0;
+  padding: 0;
+}
+
+.administration-content-line{
+  width: 477px;
+  margin-top: 17px;
+  margin-bottom: 14px;
+}
+
+.administration-content-img{
+  width: 225px;
+  height: 225px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.text-link-zone{
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  width: 229px;
+  height: 225px;
+  margin-left: 26px;
+  background-color: #FEFEFE;
+  float: right;
+}
+.text-link{
+  margin: 0;
+  padding: 0;
+  margin-bottom: 21px;
+}
+
+/*  education */
