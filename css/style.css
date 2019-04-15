@@ -123,7 +123,7 @@ padding: 0;
 /* =======fourth標題列======= */
 .Fourth-column{
   width: 1200px;
-  height: 1775px;
+  height: 1780px;
   background-color:rgba(254, 254, 254,0.1);
   display: -webkit-flex;
   /* display: flex; */
@@ -386,7 +386,7 @@ padding: 0;
   font-size: 20px;
   margin: 0;
   padding: 0;
-  margin-top: 29.963px;
+  padding-top:30px;
   margin-left: 74.372px;
 }
 .footer-btn{
@@ -473,15 +473,15 @@ margin-bottom: 38.9px;
 
 .administration-column{
   height: 1583px;
-  background-color: aqua;
+  background-color: #FEFEFE;
   margin-top: 54.948px;
 }
 
 .administration-content{
-  height: 1467px;
+  height: auto;
   margin: 0;
   padding: 0;
-  background-color:aquamarine;
+  background-color:#FEFEFE;
 }
 
 .administration-context-grid{
@@ -511,7 +511,7 @@ margin-bottom: 38.9px;
 .administration-context-item{
   width: 480px;
   height: 325px;
-  background-color: rgb(161, 54, 98);
+  background-color: #FEFEFE;
 }
 
 .administration-item-text{
@@ -524,6 +524,7 @@ margin-bottom: 38.9px;
   color: #221814;
   font-size: 16px;
   font-family:  sans-serif,'華康行書體';
+  white-space:nowrap; 
   margin: 0;
   padding: 0;
 }
@@ -550,7 +551,7 @@ margin-bottom: 38.9px;
   width: 229px;
   height: 225px;
   margin-left: 26px;
-  background-color: #3aa066;
+  background-color: #FEFEFE;
   float: right;
 }
 .text-link{
@@ -558,3 +559,5 @@ margin-bottom: 38.9px;
   padding: 0;
   margin-bottom: 21px;
 }
+
+/*  education */
