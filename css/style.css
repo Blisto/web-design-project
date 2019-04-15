@@ -4,6 +4,11 @@ html{
   padding: 0px auto;
   background-color: #FEFEFE;
   margin:0px auto;
+  border: 0px;
+}
+
+.administration-html{
+  height: 1800px;
 }
 
 .test{
@@ -26,6 +31,7 @@ html{
   width: 1200px;
   height: 60px;
   background-color:#364FA1;
+  position: fixed;
 }
 .Title-nav{
   padding-right: 22px;
@@ -63,6 +69,7 @@ html{
   height: 105px;
   background-color:#FEFEFE;
   display: flex;
+  padding-top: 55px;
 }
 .NTUT-logo-size{
   width: 349px;
@@ -108,6 +115,7 @@ padding: 0;
 
 .NTUT-header-logo{
   size: auto;
+  width: 100%;
 }
 
 
@@ -115,12 +123,17 @@ padding: 0;
 .Fourth-column{
   width: 1200px;
   height: 1775px;
-  background-color:#FEFEFE;
+  background-color:rgba(254, 254, 254,0.1);
   display: -webkit-flex;
   /* display: flex; */
   flex-direction: column;
   -webkit-align-items: center;
   align-items: center;
+  background-image: url(/img/紅樓.jpg);
+  background-repeat:no-repeat;
+  /* background-attachment:fixed; */
+  background-size: 80%,80%;
+  background-position:right bottom;
 }
 
 .NEWS-title{
@@ -165,7 +178,7 @@ padding: 0;
   width: 1200px;
   height: 366px;
   margin-top: 40px;   /* zero point=8px */
-  background-color: #FEFEFE;
+  background-color: rgba(254, 254, 254,0.1);
   display: flex;
 }
 
@@ -174,7 +187,7 @@ padding: 0;
   height: 270px;
   margin-top: 9px;
   margin-left: 343px;
-  background-color:#FEFEFE;
+  background-color:rgba(254, 254, 254,0.1);
 
 }
 
@@ -194,7 +207,7 @@ padding: 0;
   height:358.109333px ; */
   width: 496.938px;
   height: 366px; /*+114 to more button*/
-  background-color: #FEFEFE;
+  background-color: rgba(254, 254, 254,0.1);
   
 }
 
@@ -202,7 +215,7 @@ padding: 0;
   width: 496.938px;
   height: 268.582px;
   /* margin-top: 0; */
-  background-color: #FEFEFE;
+  background-color: rgba(254, 254, 254,0.1);
 }
 
 .Board-content-date{
@@ -250,9 +263,9 @@ padding: 0;
 
 .NEWS-content{
   width: 1200px;
-  height: 744px;
+  height: 724px;
   margin-top: 25.22px;
-  background-color: #FEFEFE;
+  background-color: rgba(254, 254, 254,0.1);
 
 }
 .row {
@@ -265,7 +278,7 @@ padding: 0;
 .col {
 	padding: 0 15px;
   width: calc(100%/4);
-  height: 339.67px;
+  height: 334.67px;
 }
 
 /* Gallery Style */
@@ -289,7 +302,7 @@ padding: 0;
   font-family: 'Noto Sans TC', sans-serif;
   font-size: 17px;
   /* margin-top: 19.987px; */
-  margin-bottom: 105px;
+  margin-bottom: 90px;
   color: #221814;
 }
 
@@ -302,4 +315,171 @@ padding: 0;
   padding: 0;
   margin-bottom: 24.22px;
   display: flex;
+}
+
+.Link-column{
+  width: 1200px;
+  height: 336px;
+  background-color: rgba(254, 254, 254,0.1);
+
+}
+
+.Link-content-zone{
+  width: 1200px;
+  height: 270px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+}
+.Link-content-item{
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 20px;
+  color: #221814;
+  height: 230.56px;
+  padding: 0;
+  margin: 0;
+}
+.link1{
+  width: 147.242px;
+  margin-left: 74.372px;
+}
+.link2{
+  width: 173.227px;
+  margin-left: 36px;
+}
+.link3{
+  width: 256.328px;
+  margin-left: 45px;
+}
+.link4{
+  width: 127.828px;
+  height: 182.56px;
+  margin-left: 72px;
+}
+.link5{
+  width: 173.227px;
+  height: 134.56px;
+  margin-left: 34.812px;
+}
+
+.Link-content-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.Link-content-text{
+  margin: 0px;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.footer{
+  width: 1200px;
+  height: 116px;
+  background-color:#3aa066;
+  margin: 0;
+  padding: 0; 
+}
+.footer-link{
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  margin-top: 29.963px;
+  margin-left: 74.372px;
+}
+.footer-btn{
+  color: #FEFEFE;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 5px;
+}
+.copyright{
+  color: #FEFEFE;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  margin-top: 9px;
+  margin-left: 74.372px;
+}
+
+.icon-zone{
+padding: 0;
+margin-right: 80.949px;
+margin-left: 64.782px;
+margin-top: 36px;
+margin-bottom: 38.9px;
+}
+.icon{
+  width: 36px;
+  height: 36px;
+  margin-left: 27.496px;
+}
+
+
+.line-column{
+  height: 1;
+  width: 1200px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.bottom-line{
+  margin: 0;
+  padding: 0;
+  width: 225px;
+}
+.line1{
+  margin: 0;
+  margin-top:-11px;
+  width: 63px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+.line2{
+  margin: 0;
+  margin-top:3px;
+}
+.line2-center{
+  display: flex;
+  justify-content: center;
+}
+.line3{
+  margin: 0;
+  margin-top: -20px;
+  margin-left: 86.5px;
+}
+.line4{
+  margin-top: -20px;
+  margin-left: 373px;
+}
+.line5{
+  margin-top: -20px;
+  margin-left: 288px;
+}
+.line6{
+  margin-top: -20px;
+  margin-left: 330px;
+}
+
+.FAP-btn{
+  position: fixed;
+}
+
+/* 底下是行政單位所使用 不包含首頁的相似元件 */
+
+.administration-column{
+  height: 1583px;
+  background-color: aqua;
+  margin-top: 54.948px;
+}
+
+.administration-content{
+  height: 1467px;
+  margin: 0;
+  padding: 0;
+  background-color:aquamarine;
 }
