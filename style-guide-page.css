@@ -1,0 +1,55 @@
+html{
+    box-sizing:border-box;
+    padding:0px;
+    margin:0px;
+}
+
+*,*:before,*:after{
+    box-sizing:inherit;
+}
+
+@font-face{
+    font-family:'華康行書體';
+    src:url(/font/華康行書體.TTF)format("truetype"),
+        url(/font/華康行書體.woff)format("woff");
+  }
+
+body{
+    width:1200px;
+    height:800px;
+    margin:0px;
+}
+
+.bg{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-image:url('img/引導頁.jpg');
+    width:1200px;
+    height:800px;
+}
+
+.border-box{
+    width:1111px;
+    height:731px;
+    border:3px #fefefe solid;
+}
+
+.tittle{
+font-family:'華康行書體';
+  font-size: 72px;
+  color: #FEFEFE;
+  padding: 0;
+  text-align:center;
+}
+
+.button{
+    margin-top:400px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.entry-button{
+    margin-left:135px;
+}
