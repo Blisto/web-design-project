@@ -1,0 +1,217 @@
+html{
+    box-sizing:border-box;
+    padding:0px;
+    margin:0px;
+}
+
+*,*:before,*:after{
+    box-sizing:inherit;
+}
+
+@font-face{
+    font-family: 'Gabriola';
+    src: url(/font/Gabriola.ttf)format("truetype"),
+         url(/font/Gabriola.woff)format("woff");
+  }
+
+body{
+    width:1200px;
+    height:1800px;
+    margin:0px;
+}
+
+/* header style */
+.header-nav{
+    margin-left:482.53px;
+    margin-top:18.89px;
+}
+.header-text{
+    font-family:'Noto Sans TC', sans-serif;
+    font-size:12px;
+    color:#436159;
+    text-decoration:none;
+    padding-right:49.718px;
+}
+.header-BM{
+    width:1200px;
+    height:345px;
+    margin-top:18.89px;
+}
+
+.Category{
+    width:1200px;
+    height:300px;
+    display: grid;
+    margin: 0;
+    padding: 0;
+    border: -5px;
+    grid-template-columns:300px;
+    grid-template-rows:150px;
+}
+
+.intrduction{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: block;
+    float: left; 
+}
+/* img{
+    display: block;
+    float: left; 
+} */
+.news{
+    display:flex;
+    width:1200px;
+    height:350px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.news-box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:50px;
+    width:300px;
+    height:300px;
+    border:1px solid #65867d;
+    border-bottom-style:none;
+    border-top-style:none;
+}
+
+.text-box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position: relative;
+    position: absolute;
+    left:300px;
+    top:700px;
+    width:900px;
+    height:300px;
+    margin:0;
+    margin-top:45px;
+    padding:0;
+}
+.nav-list-ul{
+    list-style-image:url('/img/圖釘.png');
+    list-style-position:outside;
+    height: 250.413px;
+    padding: 0px;
+    margin:0px;
+    margin-top:25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.More-button{
+    margin:0px;
+    font-family:'Gabriola';
+    font-size: 30px;
+    text-align: center;
+    line-height:15px;
+    color: #747474;
+    margin-top: 280px;
+  }
+
+.nav-text{
+    font-family:'Noto Sans TC', sans-serif;
+    font-size:20px;
+    color:#747474;
+    margin: 0;
+    padding: 0;
+    text-decoration: none; 
+}
+
+.news-text{
+    font-family:'Noto Sans TC', sans-serif;
+    font-size:32px;
+    color:#436159;
+    margin: 0;
+    padding: 0;
+}
+
+.information{
+    background-color:#8ecabc;
+    display:flex;
+    width: 1200px;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+}
+
+.information-bar{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:300px;
+    height:500px;
+    border:1px solid #65867d;
+    border-bottom-style:none;
+    border-top-style:none;
+}
+.information-ul{
+    text-align: center;
+    margin:0px;
+    padding:0px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.information-text{
+    font-family:'Noto Sans TC', sans-serif;
+    font-size:32px;
+    color:#436159;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.text2-ul{
+    background-color:#d8edec;
+    width:630px;
+    height: 500px;
+    margin: 0;
+    margin-top:-21px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.text2-ul-text{
+    font-family:'Noto Sans TC', sans-serif;
+    font-size:20px;
+    color:#747474;
+    margin: 0;
+    padding: 0;
+    text-decoration: none; 
+}
+
+.footer{
+    width:1200px;
+    height:100px;
+    background-color:#ccdfdb;
+}
+
+.text{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    line-height:33px;
+    font-family:'Noto Sans TC', sans-serif;
+    font-size:14px;
+    color:#747474;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
