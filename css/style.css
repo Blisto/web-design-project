@@ -561,3 +561,76 @@ margin-bottom: 38.9px;
 }
 
 /*  education */
+
+/* bulletin */
+.bulletin-html{
+  height: 1992px;
+  width: 1200px;
+}
+
+.bulletin-container{
+  margin: 0;
+  padding: 0;
+  width: 1200px;
+  height: 1992px;
+  background-color: aqua;
+}
+.bulletin-third-column{
+  margin: 0;
+  padding: 0;
+  width: 1200px;
+  height: 1724px;
+  background-color: #FEFEFE;
+  display:flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: center;
+}
+
+.bulletin-img{
+  margin: 0;
+  margin-top: 24px;
+  padding: 0;
+  border: 0;
+  width: 736px;
+  height: 412px;
+}
+
+.bulletin-title-text{
+  margin: 0;
+  padding: 0;
+  margin-top: 32px;
+}
+
+.bulletin-line{
+  width: 224px;
+  margin-top: 12px;
+  margin-bottom: 2px;
+}
+
+.bulletin-content-zone{
+  width: 1200px;
+  height: 1214px;
+  margin: 0;
+  padding: 0;
+  background-color: #FEFEFE;
+  display: flex;
+  justify-content: center;
+}
+
+.bulletin-content{
+  width: 720px;
+  height: 1199.7px;
+  margin: 0;
+  padding: 0;
+  background-color: #FEFEFE;
+}
+
+.bulletin-date{
+  margin-top: 33px;
+}
+
+.bulletin-text{
+  white-space: nowrap;
+  margin-bottom: 9px;
+}
