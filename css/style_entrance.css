@@ -1,0 +1,198 @@
+html{
+    width: 1200px;
+    height: 700px;
+    padding: 0 auto;
+    margin: 0px auto;
+    border: 0px;
+}
+.this-is-test-content{
+    width: 1200px;
+    height: 700px;
+    padding: 0 ;
+    margin: 0px ;
+    border: 0px;
+    background-image:url(/img/圖片_登入_background.png);
+    background-color: rgba(0, 255, 255, 0.1);
+    background-size: auto,auto;
+}
+@font-face{
+    font-family:'華康行書體';
+    src:url(/font/華康行書體.TTF)format("truetype"),
+        url(/font/華康行書體.woff)format("woff");
+  }
+  @font-face{
+    font-family: 'Gabriola';
+    src: url(/font/Gabriola.ttf)format("truetype"),
+         url(/font/Gabriola.woff)format("woff");
+  }
+
+
+
+
+  /*  */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    width: 1200px;
+    height: 105px;
+    background-color: rgba(254, 254, 254,0.1);
+    
+}
+
+.bottom-line{
+    width:900px; 
+    margin: 0;
+    padding: 0;
+    margin-right:40px;
+
+}
+.line-test{
+    margin: 0px;
+}
+
+.header-logo{
+    margin-left: 46.731px;
+    margin-top: 6.422px;
+    padding: 0 auto;
+    width: 177.649px;
+    height: 104.507px;
+}
+.right-test{
+    margin: 0;
+    padding: 0;
+    width:975.62px;
+    height:104.5px ;
+}
+.heaader-right-zone{
+    margin: 0;
+    padding: 0;
+    width:975.62px;
+    height:69.5px ;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-title{
+    margin-top: 28.377px;
+    padding: 0 auto;
+    font-size: 36px;
+    font-family: '華康行書體';
+}
+
+.header-nav{
+    margin-right: 50px;
+    margin-top:43px;
+    padding: 0 auto;
+    font-size: 14px;
+    font-family: sans-serif,'華康行書體';   
+}
+
+.content{
+    margin: 0;
+    padding: 0;
+    width: 1200px;
+    height: 535px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    
+    background-color:rgba(150, 150, 150, 0.123);
+
+}
+
+.login-content{
+    margin: 0;
+    padding: 0;
+    width: 447px;
+    height: 410px;
+    background-color:  rgba(254, 254, 254,0.1);
+
+}
+.login-content-bottom{
+    margin: 0;
+    padding: 0;
+    width: 447px;
+    height: 117px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+
+
+.login-background-img{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 447px;
+    height: 352px;
+    background-image: url(/img/圖片_登入_BOX-01.png);
+    background-size: auto,auto;
+    background-repeat:no-repeat;
+}
+
+.title-ch{
+    height: 29.679px;
+    width: auto;
+    font-family:'華康行書體';
+    font-size: 36px;
+    padding: 0;
+    margin: 0;
+  }
+
+.login-bottom-text{
+    height:auto; 
+    color: #E0E0E0; 
+    font-size: 20px;
+    margin-top: 20px;
+}
+/* footer */
+
+.footer{
+    width: 1200px;
+    height: 60px;
+    background-color:#3aa066;
+    margin: 0;
+    padding: 0; 
+  }
+  .footer-link{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    padding-top:10px;
+    margin-left: 74.372px;
+  }
+  .footer-btn{
+    color: #FEFEFE;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 5px;
+  }
+  .copyright{
+    color: #FEFEFE;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    margin-top: 9px;
+    margin-left: 74.372px;
+  }
+  
+  .icon-zone{
+  padding: 0;
+  margin-right: 80.949px;
+  margin-left: 64.782px;
+  margin-top: 10px;
+  margin-bottom: 38.9px;
+  }
+  .icon{
+    width: 36px;
+    height: 36px;
+    margin-left: 27.496px;
+  }
