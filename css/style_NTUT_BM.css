@@ -1,7 +1,10 @@
 html{
     box-sizing:border-box;
-    padding:0px;
-    margin:0px;
+    height: 1800px;
+    width: 1200px;
+    padding:0px auto;
+    margin:0px auto;
+    border: 0;
 }
 
 *,*:before,*:after{
@@ -181,6 +184,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    list-style:none;
 }
 
 .text2-ul-text{
@@ -215,3 +219,66 @@ body{
 
 
 
+
+/*  */
+figure {
+	width: 300px;
+	height: 200px;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	overflow: hidden;
+}
+figure:hover+span {
+	bottom: -36px;
+	opacity: 1;
+}
+.hover15 figure {
+	position: relative;
+}
+.hover15 figure::before {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 0;
+	height: 0;
+	background: rgba(255,255,255,.2);
+	border-radius: 100%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	opacity: 0;
+}
+.hover15 figure:hover::before {
+	-webkit-animation: circle .75s;
+	animation: circle .75s;
+}
+@-webkit-keyframes circle {
+	0% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	100% {
+		width: 200%;
+		height: 200%;
+		opacity: 0;
+	}
+}
+@keyframes circle {
+	0% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	100% {
+		width: 200%;
+		height: 200%;
+		opacity: 0;
+	}
+}
+/*  */
