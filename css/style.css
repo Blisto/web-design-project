@@ -245,7 +245,7 @@ padding: 0;
   height: 50px;
   margin-top: 47.436px;
   margin-left: 373.938px;
-  background-color: #3aa066;
+  background-color: #4aba78;
 }
 
 .NEWS-title2{
@@ -634,3 +634,21 @@ margin-bottom: 38.9px;
   white-space: nowrap;
   margin-bottom: 9px;
 }
+
+
+
+
+/*  */
+
+.More-button:hover {
+  display:block;
+  background-color: rgba(51, 136, 86,0.9);
+
+ }
+
+ .Second-title-nav-btn:hover{
+   /* display: block; */
+   color:rgb(148, 144, 144) ;
+ }
+
+/*  */
