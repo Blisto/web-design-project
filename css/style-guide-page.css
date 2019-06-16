@@ -2,8 +2,11 @@ html{
     box-sizing:border-box;
     padding:0px auto;
     margin:0px auto;
-    width: 1200px;
-    height: 800px;
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    max-height: 800px;
+    /* align-content: center; */
 }
 
 *,*:before,*:after{
@@ -17,41 +20,198 @@ html{
   }
 
 body{
-    width:1200px;
-    height:800px;
+    align-content: center;
+    width:100%;
+    height:100%;
     margin:0px;
 }
 
+
+
+@media (min-width:720px){
 .bg{
     display:flex;
     justify-content:center;
     align-items:center;
     background-image:url('/img/引導頁.jpg');
-    width:1200px;
-    height:800px;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    background-size: cover;
+    width:100%;
+    height:100%;
+
 }
 
 .border-box{
-    width:1111px;
-    height:731px;
+    width:91%;
+    height:91%;
     border:3px #fefefe solid;
 }
 
 .tittle{
+    height: 50%;
 font-family:'華康行書體';
-  font-size: 72px;
+  font-size: 6vw;
   color: #FEFEFE;
   padding: 0;
+  padding-top: 3%;
   text-align:center;
+  margin: 0px;
 }
 
 .button{
-    margin-top:400px;
+    height: 50%;
+    margin-top:0px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding: 0;
+    padding-top: 15%;
+    justify-content: space-evenly;
+}
+
+.guide-btn
+{
+    width: 30%;
+    height: auto;
+    max-width: 246px;
+    max-height: 72px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.guide-img
+{
+    width: 100%;
+    height: 100%;
+}
+}
+
+
+  /* w-min:360 max720 最小寬度360~720  PC版面*/
+
+@media (min-width:360px)and (max-width: 720px){
+
+.bg{
+display:flex;
+justify-content:center;
+align-items:center;
+background-image:url('/img/引導頁.jpg');
+background-position: center;
+background-attachment: fixed;
+background-repeat:no-repeat;
+background-size: cover;
+width:100%;
+height:100%;
+}
+        
+.border-box{
+width:91%;
+height:91%;
+border:3px #fefefe solid;
+}
+        
+.tittle{
+height: 50%;
+font-family:'華康行書體';
+font-size: 6vw;   
+color: #FEFEFE;
+padding: 0;
+padding-top: 3%;
+text-align:center;
+margin: 0;
+}
+        
+.button{
+height: 50%;
+margin-top:0px;
+display:flex;
+justify-content:center;
+align-items:center;
+justify-content: space-evenly;
+padding: 0;
+padding-top: 10%;
+}
+    
+.guide-btn
+{
+    width: 30%;
+    height: auto;
+    max-width: 246px;
+    max-height: 72px;
     display:flex;
     justify-content:center;
     align-items:center;
 }
 
-.entry-button{
-    margin-left:135px;
+.guide-img
+{
+    width: 100%;
+    height: 100%;
 }
+}
+
+
+@media (min-width:360px)and (max-width: 720px)
+{
+    .bg{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        background-image:url('/img/引導頁.jpg');
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat:no-repeat;
+        background-size: cover;
+        width:100%;
+        height:100%;
+        }
+                
+        .border-box{
+        width:91%;
+        height:91%;
+        border:3px #fefefe solid;
+        }
+                
+        .tittle{
+        height: 50%;
+        font-family:'華康行書體';
+        font-size: 7vw;   
+        color: #FEFEFE;
+        padding: 0;
+        padding-top: 13%;
+        text-align:center;
+        margin: 0;
+        }
+                
+        .button{
+        height: 50%;
+        margin-top:0px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        justify-content: space-evenly;
+        padding: 0;
+        padding-top: -15%;
+        }
+            
+        .guide-btn
+        {
+        width: 30%;
+        height: auto;
+        max-width: 246px;
+        max-height: 72px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        }
+
+        .guide-img
+        {
+            width: 100%;
+            height: 100%;
+        }
+} 

@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>教學單位</title>
+  <script src="/js/jquery-3.4.0.min.js"></script>
+  <script src="/js/main.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" media="screen" href="/css/style.css">
@@ -13,39 +15,479 @@
   </style>
 </head>
 <body>
-  <div class="Title-column">
-    <div class="Title-nav">
-      <nav class="Title-nav-list">
-        <a class="title-nav-btn" href="#">在學學生&nbsp;</a>
-        <a class="title-nav-btn" href="#">未來學生&nbsp;</a>
-        <a class="title-nav-btn" href="#">學生家長&nbsp;</a>
-        <a class="title-nav-btn" href="#">教師職員&nbsp;</a>
-        <a class="title-nav-btn" href="#">畢業校友&nbsp;</a>
-        <a class="title-nav-btn" href="#">來賓訪客&nbsp;</a>
-        <a class="title-nav-btn-en" href="#">English&nbsp;</a>
-      </nav>
+    <div class="Title-column">
+        <div class="Title-nav">
+            <nav class="Title-nav-list">
+                <a class="title-nav-btn" href="#">在學學生&nbsp;</a>
+                <a class="title-nav-btn" href="#">未來學生&nbsp;</a>
+                <a class="title-nav-btn" href="#">學生家長&nbsp;</a>
+                <a class="title-nav-btn" href="#">教師職員&nbsp;</a>
+                <a class="title-nav-btn" href="#">畢業校友&nbsp;</a>
+                <a class="title-nav-btn" href="#">來賓訪客&nbsp;</a>
+                <a class="title-nav-btn-en" href="#">English&nbsp;</a>
+            </nav>
+        </div>
     </div>
-  </div>
 
-  <div class="Second-column">
-    <div class="NTUT-logo-size">
-      <a href="home.html"><img src="/img/NTUT logo.jpg" class="NTUT-logo"></a>
-    </div>
+    <div class="Second-column">
+            <div class="NTUT-logo-size">
+                <a href="home.html"><img src="/img/NTUT logo.jpg" class="NTUT-logo"></a>
+        </div>
         
-    <div class="Second-Title-nav">
-      <nav class="Second-Title-nav-list">
-        <a class="Second-title-nav-btn" href="#">認識北科大&nbsp;</a>
-        <a class="Second-title-nav-btn" href="#">招生資訊&nbsp;</a>
-        <a class="Second-title-nav-btn" href="education.html">教學資源&nbsp;</a>
-        <a class="Second-title-nav-btn" href="administrative.html">行政服務&nbsp;</a>
-        <a class="Second-title-nav-btn" href="#">研發合作&nbsp;</a>
-        <a class="Second-title-nav-btn" href="#">資訊服務&nbsp;</a>
-        <a class="Second-title-nav-btn" href="#">捐資興學&nbsp;</a>
-      </nav>
-    </div>
-  </div> 
+        <div class="Second-Title-nav">
+            <nav class="Second-Title-nav-list">
+                <a class="Second-title-nav-btn" href="#">認識北科大&nbsp;</a>
+                <a class="Second-title-nav-btn" href="#">招生資訊&nbsp;</a>
+                <a class="Second-title-nav-btn" href="education.html">教學資源&nbsp;</a>
+                <a class="Second-title-nav-btn" href="administrative.html">行政服務&nbsp;</a>
+                <a class="Second-title-nav-btn" href="#">研發合作&nbsp;</a>
+                <a class="Second-title-nav-btn" href="#">資訊服務&nbsp;</a>
+                <a class="Second-title-nav-btn" href="#">捐資興學&nbsp;</a>
+            </nav>
+        </div>
 
-  <div class="Third-column administration-column" style="margin-top:0px;">
+
+        <div class="Burger-menu">
+            <ul class="itemlist_setting">
+                <li>
+                    <div id="nav-icon3">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </li>
+                <li class="itemlist">
+                    <div>
+                    <a href="home.html"style=" text-decoration:none;"></a><p class="listcontent" style="border-top-width: 3px;">認識北科大</p></a>
+                    <a href="home.html"style=" text-decoration:none;"><p class="listcontent">招生資訊</p></a>
+                    <a href="home.html"style=" text-decoration:none;"><p class="listcontent">教學資源</p></a>
+                    <a href="home.html"style=" text-decoration:none;"><p class="listcontent">行政服務</p></a>
+                    <a href="home.html"style=" text-decoration:none;"><p class="listcontent">研發合作</p></a>
+                    <a href="home.html"style=" text-decoration:none;"><p class="listcontent">資訊服務</p></a>
+                    <a href="home.html"style=" text-decoration:none;"><p class="listcontent"style="  border-bottom-width: 3px;">捐資興學</p></a>
+                    </div>   
+                </li>
+            </ul>
+        </div>
+
+    </div>  
+
+
+    <div class="Third-column administration-column">
+        <div  class="administration-content size1200-768">
+          <ul class="administration-context-grid administration-row">
+            <li class="administration-col">
+              <div class="administration-context-item">
+                <div class="title-ch administration-item-text" style="height:auto;">機電學院</div>
+                <p class="administration-address">電話: (02)27712171#4500 傳真: (02)27764017 位置: 綜合科館七樓</p>
+                <div style="width: 100%;  display: flex;justify-content: center;"><HR class="bottom-line administration-content-line"color="#3aa066" size="1"></div>
+                <div style="height: auto;width:100%;display: flex;">
+                    <img class="administration-content-img" src="/img/粽科.jpg">
+                    <div class="text-link-zone">
+                      <p class="text-link">楊副校長室</p>
+                      <p class="text-link">分機:1051 位置:行政大樓四樓</p>
+                      <p class="text-link">任副校長室</p>
+                      <p class="text-link">分機:1061 位置:行政大樓四樓</p>
+                    </div>
+                </div>
+              </div>
+            </li>
+    
+            <li class="administration-col">
+              <div class="administration-context-item">
+                <div class="title-ch administration-item-text" style="height:auto;">電資學院</div>
+                <p class="administration-address">電話: (02)27712171#6200 傳真: (02)27726133 位置: 綜合科館一樓</p>
+                <div style="width: 100%;  display: flex;justify-content: center;"><HR class="bottom-line administration-content-line"color="#3aa066" size="1"></div>
+                <div style="height: auto;width:100%;display: flex;">
+                  <img class="administration-content-img" src="/img/億光3.jpg">
+                  <div class="text-link-zone">
+                  </div>
+                </div>
+              </div>
+            </li>
+    
+            <li class="administration-col">
+              <div class="administration-context-item">
+                <div class="title-ch administration-item-text" style="height:auto;">工程學院</div>
+                <p class="administration-address">電話: (02)27712171#4520 傳真: (02)27763980 位置: 位置:第一教學大樓二樓</p>
+                <div style="width: 100%;  display: flex;justify-content: center;"><HR class="bottom-line administration-content-line"color="#3aa066" size="1"></div>
+                <div style="height: auto;width:100%;display: flex;">
+                  <img class="administration-content-img" src="/img/工程學院.png">
+                  <div class="text-link-zone">
+                    <p class="text-link">課務組</p>
+                    <p class="text-link">註冊組</p>
+                    <p class="text-link">綜合企劃組</p>
+                    <p class="text-link">出版組</p>
+                    <p class="text-link">視聽教學中心</p>
+                    <p class="text-link">教學資源中心</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+    
+            <li class="administration-col">
+              <div class="administration-context-item">
+                <div class="title-ch administration-item-text" style="height:auto;">管理學院</div>
+                <p class="administration-address">電話: (02)27712171#4540 傳真: (02)27763996 位置: 科技大樓八樓</p>
+                <div style="width: 100%;  display: flex;justify-content: center;"><HR class="bottom-line administration-content-line"color="#3aa066" size="1"></div>
+                <div style="height: auto;width:100%;display: flex;">
+                  <img class="administration-content-img" src="/img/六教.jpg">
+                  <div class="text-link-zone">
+                    <p class="text-link">生活輔導組</p>
+                    <p class="text-link">課外活動指導組</p>
+                    <p class="text-link">衛生保健組</p>
+                    <p class="text-link">學生輔導中心</p>
+                    <p class="text-link">學生輔導中心-資源教室</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+    
+            <li class="administration-col">
+              <div class="administration-context-item">
+                <div class="title-ch administration-item-text" style="height:auto;">設計學院</div>
+                <p class="administration-address">電話: (02)27712171#4560 傳真: (02)27765102 位置: 設計館六樓</p>
+                <div style="width: 100%;  display: flex;justify-content: center;"><HR class="bottom-line administration-content-line"color="#3aa066" size="1"></div>
+                <div style="height: auto;width:100%;display: flex;">
+                  <img class="administration-content-img" src="/img/設計館.jpg">
+                  <div class="text-link-zone">
+                    <p class="text-link">事務組</p>
+                    <p class="text-link">營繕組</p>
+                    <p class="text-link">經營管理組</p>
+                    <p class="text-link">文書組</p>
+                    <p class="text-link">出納組</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+    
+            <li class="administration-col">
+              <div class="administration-context-item">
+                <div class="title-ch administration-item-text" style="height:auto;">人文與社會科學學院</div>
+                <p class="administration-address">電話: (02)27712171#4580 傳真: (02)27765055 位置: 共同科館五樓</p>
+                <div style="width: 100%;  display: flex;justify-content: center;"><HR class="bottom-line administration-content-line"color="#3aa066" size="1"></div>
+                <div style="height: auto;width:100%;display: flex;">
+                  <img class="administration-content-img" src="/img/共科.png">
+                  <div class="text-link-zone">
+                    <p class="text-link">會計組</p>
+                    <p class="text-link">歲計組</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+    
+            <li class="administration-col">
+              <div class="administration-context-item">
+                <div class="title-ch administration-item-text" style="height:auto;">體育室</div>
+                <p class="administration-address">電話: (02)27712171#3300 傳真: (02)27317179 位置: 第四教學大樓</p>
+                <div style="width: 100%;  display: flex;justify-content: center;"><HR class="bottom-line administration-content-line"color="#3aa066" size="1"></div>
+                <div style="height: auto;width:100%;display: flex;">
+                  <img class="administration-content-img" src="/img/粽科.jpg">
+                  <div class="text-link-zone">
+                    <p class="text-link">研究企劃組</p>
+                    <p class="text-link">技術發展組</p>
+                    <p class="text-link">實習就業輔導組</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+    
+            <li class="administration-col">
+              <div class="administration-context-item">
+                <div class="title-ch administration-item-text" style="height:auto;">通識中心</div>
+                <p class="administration-address">電話: (02)27712171#3000 傳真: (02)277317180 位置: 共同科館五樓</p>
+                <div style="width: 100%;  display: flex;justify-content: center;"><HR class="bottom-line administration-content-line"color="#3aa066" size="1"></div>
+                <div style="height: auto;width:100%;display: flex;">
+                  <img class="administration-content-img" src="/img/通識中心.jpg">
+                  <div class="text-link-zone">
+                    <p class="text-link">讀者服務組</p>
+                    <p class="text-link">技術服務組</p>
+                    <p class="text-link">資訊服務組</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+    
+          </ul>
+        </div>
+    
+    
+        <div class="size768-500"><!-- 768~500 -->
+          <div class="card-array"style="white-space:nowrap;">
+            <div class="card-part"style="float: left;">
+                <div class="card">
+                    <div class="title-ch administration-item-text" style="height:auto;margin-top: 10px;">機電學院</div>
+                    <img class="card-img"src="/img/粽科.jpg">
+                    <p class="administration-address" style="margin-bottom: 4%;">電話: (02)27712171#4500</p>
+                    <p class="administration-address" style="margin-bottom: 4%;">傳真: (02)27764017</p>
+                    <p class="administration-address" style="margin-bottom: 10%;">位置: 綜合科館七樓</p>
+                </div>
+            </div>
+            <div class="card-part">
+                <div class="card">
+                    <div class="title-ch administration-item-text" style="height:auto;margin-top: 10px;">電資學院</div>
+                    <img class="card-img"src="/img/億光3.jpg">
+                    <p class="administration-address" style="margin-bottom: 4%;">電話: (02)27712171#6200</p>
+                    <p class="administration-address" style="margin-bottom: 4%;">傳真: (02)27726133</p>
+                    <p class="administration-address" style="margin-bottom: 10%;">位置: 綜合科館一樓</p>
+                </div>
+            </div>
+          </div>
+    
+          <div class="card-array" style="display: inline-block;">
+              <div class="card-part"style="float: left;">
+                  <div class="card">
+                      <div class="title-ch administration-item-text" style="height:auto;margin-top: 10px;">工程學院</div>
+                      <img class="card-img"src="/img/工程學院.png">
+                      <p class="administration-address" style="margin-bottom: 4%;">電話: (02)27712171#4520</p>
+                      <p class="administration-address" style="margin-bottom: 4%;">傳真: (02)27763980</p>
+                      <p class="administration-address" style="margin-bottom: 10%;">位置: 位置:第一教學大樓二樓</p>
+                  </div>
+              </div>
+              <div class="card-part">
+                  <div class="card">
+                      <div class="title-ch administration-item-text" style="height:auto;margin-top: 10px;">管理學院</div>
+                      <img class="card-img"src="/img/六教.jpg">
+                      <p class="administration-address" style="margin-bottom: 4%;">電話: (02)27712171#4540</p>
+                      <p class="administration-address" style="margin-bottom: 4%;">傳真: (02)27763996</p>
+                      <p class="administration-address" style="margin-bottom: 10%;">位置: 科技大樓八樓</p>
+                  </div>
+              </div>
+          </div>
+    
+          <div class="card-array">
+              <div class="card-part"style="float: left;">
+                  <div class="card">
+                      <div class="title-ch administration-item-text" style="height:auto;margin-top: 10px;">設計學院</div>
+                      <img class="card-img"src="/img/設計館.jpg">
+                      <p class="administration-address" style="margin-bottom: 4%;">電話: (02)27712171#4560</p>
+                      <p class="administration-address" style="margin-bottom: 4%;">傳真: (02)27765102</p>
+                      <p class="administration-address" style="margin-bottom: 10%;">位置: 設計館六樓</p>
+                  </div>
+              </div>
+              <div class="card-part">
+                  <div class="card">
+                      <div class="title-ch administration-item-text" style="height:auto;margin-top: 10px;">人文與社會科學學院</div>
+                      <img class="card-img"src="/img/共科.png">
+                      <p class="administration-address" style="margin-bottom: 4%;">電話: (02)27712171#4580</p>
+                      <p class="administration-address" style="margin-bottom: 4%;">傳真: (02)27765055</p>
+                      <p class="administration-address" style="margin-bottom: 10%;">位置: 共同科館五樓</p>
+                  </div>
+              </div>
+          </div>
+    
+          <div class="card-array">
+              <div class="card-part"style="float: left;">
+                  <div class="card">
+                      <div class="title-ch administration-item-text" style="height:auto;margin-top: 10px;">體育室</div>
+                      <img class="card-img"src="/img/粽科.jpg">
+                      <p class="administration-address" style="margin-bottom: 4%;">電話: (02)27712171#3300</p>
+                      <p class="administration-address" style="margin-bottom: 4%;">傳真: (02)27317179</p>
+                      <p class="administration-address" style="margin-bottom: 10%;">位置: 第四教學大樓</p>
+                  </div>
+              </div>
+              <div class="card-part">
+                  <div class="card">
+                      <div class="title-ch administration-item-text" style="height:auto;margin-top: 10px;">通識中心</div>
+                      <img class="card-img"src="/img/通識中心.jpg">
+                      <p class="administration-address" style="margin-bottom: 4%;">電話: (02)27712171#3000</p>
+                      <p class="administration-address" style="margin-bottom: 4%;">傳真: (02)277317180</p>
+                      <p class="administration-address" style="margin-bottom: 10%;">位置: 共同科館五樓</p>
+                  </div>
+              </div>
+          </div>
+    
+        </div><!-- 768~500 -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        
+        <div class="size500-320"><!-- 500~320 -->
+    
+    <div class="box">
+          <div class="cardAnime front card">
+              <div class="title-ch administration-item-text" style="height:auto;margin-top: 10px;">機電學院</div>
+              <div style="height: auto;width:100%;display: flex;justify-content: space-around;">
+                <img class="NEWS-content-img" src="/img/粽科.jpg">
+                <div class="text-link-zone" style="margin: 0;border-radius: 10px;">
+                  <p class="administration-address">電話: (02)27712171#4500</p>
+                  <p class="administration-address">傳真: (02)27764017</p>
+                  <p class="administration-address">位置: 綜合科館七樓</p>
+                </div>
+              </div>
+          </div>
+          <div class="cardAnime back card">
+              <a class="NEWS-content-text" style="text-align: center;">機電學院機電科技博士班</a>
+              <a class="NEWS-content-text" style="text-align: center;">製造科技研究所</a>
+              <a class="NEWS-content-text" style="text-align: center;">自動化科技研究所</a>
+              <a class="NEWS-content-text" style="text-align: center;">機械工程系 / 機電整合碩士班</a>
+              <a class="NEWS-content-text" style="text-align: center;">車輛工程系(所)</a>
+              <a class="NEWS-content-text" style="text-align: center;">能源與冷凍空調工程系(所)</a>
+              <a class="NEWS-content-text" style="text-align: center;">智慧自動化工程科</a>
+          </div>
+    </div>
+    
+    
+    
+    <div class="box">
+          <div class="cardAnime front card">
+              <div class="title-ch administration-item-text" style="height:auto;margin-top: 10px;">電資學院</div>
+              <div style="height: auto;width:100%;display: flex;justify-content: space-around;">
+                <img class="NEWS-content-img" src="/img/億光3.jpg">
+                <div class="text-link-zone"style="margin: 0;border-radius: 10px;">
+                    <p class="administration-address">電話: (02)27712171#6200</p>
+                    <p class="administration-address">傳真: (02)27726133</p>
+                    <p class="administration-address">位置: 綜合科館一樓</p>
+                </div>
+              </div>
+          </div>
+          <div class="cardAnime back card">
+              <a class="NEWS-content-text" style="text-align: center;">電機工程系(所)</a>
+              <a class="NEWS-content-text" style="text-align: center;">電子工程系(所)</a>
+              <a class="NEWS-content-text" style="text-align: center;">光電工程系(所)</a>
+              <a class="NEWS-content-text" style="text-align: center;">資訊工程系(所)</a>
+              
+          </div>
+    </div>
+    
+    
+    
+    
+    <div class="box">
+          <div class="cardAnime front card">
+              <div class="title-ch administration-item-text" style="height:auto;margin-top: 10px;">工程學院</div>
+              <div style="height: auto;width:100%;display: flex;justify-content: space-around;">
+                <img class="NEWS-content-img" src="/img/工程學院.png">
+                <div class="text-link-zone"style="margin: 0;border-radius: 10px;">
+                    <p class="administration-address">電話: (02)27712171#4520</p>
+                    <p class="administration-address">傳真: (02)27763980</p>
+                    <p class="administration-address">位置:第一教學大樓二樓</p>
+                </div>
+              </div>
+          </div>
+          <div class="cardAnime back card" style="overflow: hidden">
+              <a class="NEWS-content-text" style="text-align: center;">工程學院工程科技博士班</a>
+              <a class="NEWS-content-text" style="text-align: center;">土木工程系 / 土木與防災碩、博士班</a>
+              <a class="NEWS-content-text" style="text-align: center;">分子科學與工程系 / 有機高分子碩、博士班</a>
+              <a class="NEWS-content-text" style="text-align: center;">環境工程與管理研究所</a>
+              <a class="NEWS-content-text" style="text-align: center;">資源工程研究所</a>
+              <a class="NEWS-content-text" style="text-align: center;">材料科學與工程研究所</a>
+              <a class="NEWS-content-text" style="text-align: center;">化學工程與生物科技系</a>
+              <a class="NEWS-content-text" style="text-align: center;">化學工程碩、博士班 / 生化與生醫工程碩士班</a>
+              <a class="NEWS-content-text" style="text-align: center;">材料及資源工程系</a>
+          </div>
+    </div>
+    
+    <div class="box">
+          <div class="cardAnime front card">
+              <div class="title-ch administration-item-text" style="height:auto;margin-top: 10px;">管理學院</div>
+              <div style="height: auto;width:100%;display: flex;justify-content: space-around;">
+                <img class="NEWS-content-img" src="/img/六教.jpg">
+                <div class="text-link-zone"style="margin: 0;border-radius: 10px;">
+                    <p class="administration-address">電話: (02)27712171#4540</p>
+                    <p class="administration-address">傳真: (02)27763996</p>
+                    <p class="administration-address">位置: 科技大樓八樓</p>
+                </div>
+              </div>
+          </div>
+          <div class="cardAnime back card">
+              <a class="NEWS-content-text" style="text-align: center;">電管理學院管理博士班</a>
+              <a class="NEWS-content-text" style="text-align: center;">資訊與財金管理系(所)</a>
+              <a class="NEWS-content-text" style="text-align: center;">工業工程與管理系(所)</a>
+              <a class="NEWS-content-text" style="text-align: center;">經營管理系(所)</a>
+              <a class="NEWS-content-text" style="text-align: center;">EMBA</a>
+              <a class="NEWS-content-text" style="text-align: center;">IMBA</a>
+          </div>
+    </div>
+    
+    <div class="box">
+          <div class="cardAnime front card">
+              <div class="title-ch administration-item-text" style="height:auto;margin-top: 10px;">設計學院</div>
+              <div style="height: auto;width:100%;display: flex;justify-content: space-around;">
+                <img class="NEWS-content-img" src="/img/設計館.jpg">
+                <div class="text-link-zone"style="margin: 0;border-radius: 10px;">
+                    <p class="administration-address">電話: (02)27712171#4560</p>
+                    <p class="administration-address">傳真: (02)27765102</p>
+                    <p class="administration-address">位置: 設計館六樓</p>
+                </div>
+              </div>
+          </div>
+          <div class="cardAnime back card">
+              <a class="NEWS-content-text" style="text-align: center;">設計學院設計博士班</a>
+              <a class="NEWS-content-text" style="text-align: center;">建築系 / 建築與都市設計碩士班</a>
+              <a class="NEWS-content-text" style="text-align: center;">工業設計系 / 創新設計碩士班</a>
+              <a class="NEWS-content-text" style="text-align: center;">互動設計系(所)</a>
+          </div>
+    </div>
+    
+    <div class="box">
+          <div class="cardAnime front card">
+              <div class="title-ch administration-item-text" style="height:auto;margin-top: 10px;">人文與社會科學學院</div>
+              <div style="height: auto;width:100%;display: flex;justify-content: space-around;">
+                <img class="NEWS-content-img" src="/img/共科.png">
+                <div class="text-link-zone"style="margin: 0;border-radius: 10px;">
+                    <p class="administration-address">電話: (02)27712171#4580</p>
+                    <p class="administration-address">傳真: (02)27765055</p>
+                    <p class="administration-address">位置: 共同科館五樓</p>
+                </div>
+              </div>
+          </div>
+          <div class="cardAnime back card">
+              <a class="NEWS-content-text" style="text-align: center;">技術及職業教育研究所</a>
+              <a class="NEWS-content-text" style="text-align: center;">智慧財產權研究所</a>
+              <a class="NEWS-content-text" style="text-align: center;">應用英文系(所)</a>
+              <a class="NEWS-content-text" style="text-align: center;">文化事業發展系(所)</a>
+          </div>
+    </div>
+    
+    
+    <div class="box">
+          <div class="cardAnime front card">
+              <div class="title-ch administration-item-text" style="height:auto;margin-top: 10px;">體育室</div>
+              <div style="height: auto;width:100%;display: flex;justify-content: space-around;">
+                <img class="NEWS-content-img" src="/img/粽科.jpg">
+                <div class="text-link-zone"style="margin: 0;border-radius: 10px;">
+                    <p class="administration-address">電話: (02)27712171#3000</p>
+                    <p class="administration-address">傳真: (02)277317180</p>
+                    <p class="administration-address">位置: 共同科館五樓</p>
+                </div>
+              </div>
+          </div>
+          <div class="cardAnime back card">
+
+          </div>
+    </div>
+    
+    <div class="box">
+          <div class="cardAnime front card">
+              <div class="title-ch administration-item-text" style="height:auto;margin-top: 10px;">通識中心</div>
+              <div style="height: auto;width:100%;display: flex;justify-content: space-around;">
+                <img class="NEWS-content-img" src="/img/通識中心.jpg">
+                <div class="text-link-zone"style="margin: 0;border-radius: 10px;">
+                    <p class="administration-address">電話: (02)27712171#3100</p>
+                    <p class="administration-address">傳真: (02)27762383</p>
+                    <p class="administration-address">位置: 行政大樓右側</p>
+                </div>
+              </div>
+          </div>
+          <div class="cardAnime back card">
+
+          </div>
+    </div>
+      
+      </div>
+
+  <!-- <div class="Third-column administration-column" style="margin-top:0px;">
 
     <div  class="administration-content">
       <ul class="administration-context-grid administration-row">
@@ -174,22 +616,24 @@
         </li>
 
       </ul>
-    </div>
+    </div> -->
 
 
     <div class="footer">
-      <div class="icon-zone" style="float:right;">
-        <a href="https://www.facebook.com/"><img class="icon" src="/img/makefg (1).png"></a>
-        <a href="https://www.youtube.com/"><img class="icon" src="/img/makefg (3).png"></a>
-      </div>
-      <nav class="footer-link" style="padding-top:30px;">
-        <a class="footer-btn"href="#">北科大校園地圖</a>
-        <a class="footer-btn"href="#">緊急聯絡電話</a>
-        <a class="footer-btn"href="#">隱私權政策宣告</a>
-        <a class="footer-btn"href="#">資訊安全政策</a>
-        <a class="footer-btn"href="#">首頁問題回報</a>
-      </nav>    
-      <h4 class="copyright">Copyright © 2019 國立臺北科技大學 10608 台北市忠孝東路三段一號 Tel: (886-2) 2771-2171</h4>    
+        <div class="footer-text-zone">
+            <nav class="footer-link">
+                <a class="footer-btn"href="#">北科大校園地圖</a>
+                <a class="footer-btn"href="#">緊急聯絡電話</a>
+                <a class="footer-btn"href="#">隱私權政策宣告</a>
+                <a class="footer-btn"href="#">資訊安全政策</a>
+                <a class="footer-btn"href="#">首頁問題回報</a>
+            </nav>
+            <h4 class="copyright">Copyright © 2019 國立臺北科技大學 10608 台北市忠孝東路三段一號 Tel: (886-2) 2771-2171</h4>
+        </div>
+        <div class="icon-zone">
+            <a href="https://www.facebook.com/"><img class="icon" src="/img/makefg (1).png"></a>
+            <a href="https://www.youtube.com/"><img class="icon" src="/img/makefg (3).png"></a>
+        </div>
     </div>
 
   </div>  

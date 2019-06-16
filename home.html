@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>國立臺北科技大學</title>
+    <script src="/js/jquery-3.4.0.min.js"></script>
+    <script src="/js/main.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" media="screen" href="/css/style.css">
@@ -12,7 +14,7 @@
         @import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC');
         
     </style>
-    <script src="/js/jquery-3.4.0.min.js"></script>
+
 </head>
 <body>
 <div class="test">
@@ -31,6 +33,10 @@
         </div>
     </div>
 
+
+
+
+
     <div class="Second-column">
             <div class="NTUT-logo-size">
                 <a href="home.html"><img src="/img/NTUT logo.jpg" class="NTUT-logo"></a>
@@ -47,6 +53,32 @@
                 <a class="Second-title-nav-btn" href="#">捐資興學&nbsp;</a>
             </nav>
         </div>
+
+
+        <div class="Burger-menu">
+            <ul class="itemlist_setting">
+                <li>
+                    <div id="nav-icon3">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </li>
+                <li class="itemlist">
+                    <div>
+                    <a href="home.html"style=" text-decoration:none;"></a><p class="listcontent" style="border-top-width: 3px;">認識北科大</p></a>
+                    <a href="home.html"style=" text-decoration:none;"><p class="listcontent">招生資訊</p></a>
+                    <a href="home.html"style=" text-decoration:none;"><p class="listcontent">教學資源</p></a>
+                    <a href="home.html"style=" text-decoration:none;"><p class="listcontent">行政服務</p></a>
+                    <a href="home.html"style=" text-decoration:none;"><p class="listcontent">研發合作</p></a>
+                    <a href="home.html"style=" text-decoration:none;"><p class="listcontent">資訊服務</p></a>
+                    <a href="home.html"style=" text-decoration:none;"><p class="listcontent"style="  border-bottom-width: 3px;">捐資興學</p></a>
+                    </div>   
+                </li>
+            </ul>
+        </div>
+
     </div>    
 
     <div class="Third-column">
@@ -54,24 +86,20 @@
     </div>  
 
 
-
-
     <div class="Fourth-column">
-
         <div class="NEWS-title">
             <p class="title-ch">最新消息</p>
             <div class="Demarcation">
                 <p class="title-en">News</p>
             </div>
-            <div class="line-column line2-center">
+            <div class="line-column line2-center"style="white-space:nowrap">
                 <HR class="bottom-line line1"color="#3aa066" size="1">
                 <HR class="bottom-line line1"color="#3aa066" size="1">
             </div>
         </div>
-
         <div class="Bulletin-Board">
             <div class="option-list">
-                <nav class="option-list-btn" style="margin-top:20px; background-color: #4aba78; color: #FFFFFF;" >一般公告</nav>
+                <nav class="option-list-btn" style="margin-top:0; background-color: #4aba78; color: #FFFFFF;" >一般公告</nav>
                 <nav class="option-list-btn">徵才快訊</nav>
                 <nav class="option-list-btn">校園演講</nav>
             </div>
@@ -79,26 +107,29 @@
             <div class="Board-content">
                     <div class="Board-content-zone">
                         <p class="Board-content-date">2019/03/01</p>
-                        <p class="Board-content-text">2019年田園音樂會~創意客家藍衫設計</p>
+                        <p class="Board-content-text">108年田園音樂會~創意客家藍衫設計</p>
                         <p class="Board-content-date">2019/02/02</p>
-                        <p class="Board-content-text">108校園企業徵才博覽會 暨 說明會中獎名單</p>
+                        <p class="Board-content-text">108校園企業徵才博覽會</p>
                         <p class="Board-content-date">2019/01/02</p>
-                        <p class="Board-content-text">107學年度第二學期期中集中考試公告</p>
+                        <p class="Board-content-text">107學年度第二學期期中考試公告</p>
                     </div>
-                    <div class="More-button">
-                        <a href="bulletin.html" style="text-decoration:none; color:#FEFEFE;"><p class="
-                            btn-text">more</p></a>
-                    </div>    
-            </div>
 
+                    <div class="More-btn-zone">
+                        <div class="More-button">
+                            <a href="bulletin.html" style="text-decoration:none; color:#FEFEFE;"><p class="btn-text" style="margin: 0">more</p></a>
+                        </div> 
+                    </div>
+   
+            </div>
         </div>
         
-        <div class="NEWS-title2">
-            <p class="title-ch" style="padding-top:0px;">媒體報導</p>
-        </div>
-        <div class="line-column line2-center">
-            <HR class="bottom-line line2"color="#3aa066" size="1">
-        </div>
+
+
+        <!-- 以下為RWD隱藏區  w小於768時 -->
+<div class="size1200-768">
+
+        <div class="NEWS-title2"><p class="title-ch">媒體報導</p></div>
+        <div class="line-column line2-center"><HR class="bottom-line line2"color="#3aa066" size="1"></div>
         <div class="NEWS-content">
             <ul class="img row">
                 <li class="img-item col">
@@ -113,16 +144,14 @@
                     <img class="NEWS-content-img" src="/img/mczh-tw1920x700_small85197_51532334318.jpg">
                     <a class="NEWS-content-text">2019-03-22 冷凍空調技師年薪破百萬 北科大甲級證照錄取率傲全台</a>
                 </li>
-
-                <li class="col title-row">
-                    <div class="title-ch" style="height:auto; margin-left:128px">校務活動</div>
-                    <div class="title-ch" style="height:auto; margin-left:456px">得獎消息</div>
+                <li class="col title-row" style="justify-content: space-around">
+                    <div class="title-ch" style="height:auto;">校務活動</div>
+                    <div class="title-ch" style="height:auto;">得獎消息</div>
                 </li>
-                <div class="line-column">
+                <div class="line-column"style="justify-content: space-around">
                     <HR class="bottom-line line3"color="#3aa066" size="1">
                     <HR class="bottom-line line4"color="#3aa066" size="1">
                 </div>
-
                 <li class="img-item col">
                         <img class="NEWS-content-img" src="/img/mczh-tw1920x700_small84923_266730908086.jpg">
                         <a class="NEWS-content-text">台北科技大學攜手德州儀器 成立AloT教學中心</a>
@@ -136,21 +165,21 @@
                         <a class="NEWS-content-text">賀！自動化科技所榮獲2018智慧機器人競賽佳作</a>
                 </li>
             </ul>
-
         </div>
+
 
         <div class="Link-column">
             <div class="title-row">
-                <div class="title-ch" style="height:auto; float: left; margin-left: 330px">校園連結</div>
-                <div class="title-ch" style="height:auto; margin-left: 417px">宣導連結</div>
+                <div class="title-ch" style="height:auto; float: left;">校園連結</div>
+                <div class="title-ch" style="height:auto;">宣導連結</div>
             </div>
-            <div class="line-column">
+            <div class="line-column"style="justify-content: space-around">
                 <HR class="bottom-line line5"color="#3aa066" size="1">
                 <HR class="bottom-line line6"color="#3aa066" size="1">
             </div>
 
             <div class="Link-content-zone">
-                <div class="Link-content-item link1">
+                <div class="Link-content-item">
                     <ul class="Link-content-list">
                         <li class="Link-content-text"><a href="#" style="text-decoration:none; color:#221814;">行事曆</a></li>
                         <li class="Link-content-text"><a href="#" style="text-decoration:none; color:#221814;">校外賃居</a></li>
@@ -160,7 +189,7 @@
                     </ul>
                 </div>
 
-                <div class="Link-content-item link2">
+                <div class="Link-content-item">
                     <ul class="Link-content-list">
                         <li class="Link-content-text"><a href="#" style="text-decoration:none; color:#221814;">捐贈興學</a></li>
                         <li class="Link-content-text"><a href="#" style="text-decoration:none; color:#221814;">學術資源網</a></li>
@@ -170,7 +199,7 @@
                     </ul>
                 </div>
 
-                <div class="Link-content-item link3">
+                <div class="Link-content-item">
                     <ul class="Link-content-list">
                         <li class="Link-content-text"><a href="#" style="text-decoration:none; color:#221814;"></a>校園紀念品 北科團購網</a></li>
                         <li class="Link-content-text"><a href="#" style="text-decoration:none; color:#221814;"></a>校園紀念品 北科酷樂網</a></li>
@@ -180,7 +209,7 @@
                     </ul>
                 </div>
 
-                <div class="Link-content-item link4">
+                <div class="Link-content-item">
                     <ul class="Link-content-list">
                         <li class="Link-content-text"><a href="#" style="text-decoration:none; color:#221814;"></a>性別平等教育</a></li>
                         <li class="Link-content-text"><a href="#" style="text-decoration:none; color:#221814;"></a>內部控制專區</a></li>
@@ -189,7 +218,7 @@
                     </ul>
                 </div>
 
-                <div class="Link-content-item link5">
+                <div class="Link-content-item">
                     <ul class="Link-content-list">
                         <li class="Link-content-text"><a href="#" style="text-decoration:none; color:#221814;"></a>個資料保護專區</a></li>
                         <li class="Link-content-text"><a href="#" style="text-decoration:none; color:#221814;"></a>智慧財產權宣導</a></li>
@@ -199,26 +228,156 @@
             </div>
         </div>
 
-        <div class="footer">
-                <div class="icon-zone" style="float:right;">
-                    <a href="https://www.facebook.com/"><img class="icon" src="/img/makefg (1).png"></a>
-                    <a href="https://www.youtube.com/"><img class="icon" src="/img/makefg (3).png"></a>
-                </div>
-            <nav class="footer-link">
-                <a class="footer-btn"href="#">北科大校園地圖</a>
-                <a class="footer-btn"href="#">緊急聯絡電話</a>
-                <a class="footer-btn"href="#">隱私權政策宣告</a>
-                <a class="footer-btn"href="#">資訊安全政策</a>
-                <a class="footer-btn"href="#">首頁問題回報</a>
-            </nav>
-            
-            <h4 class="copyright">Copyright © 2019 國立臺北科技大學 10608 台北市忠孝東路三段一號 Tel: (886-2) 2771-2171</h4>
-            
+</div>  <!-- 1200~768 -->
+
+
+<div class="size768-500"><!-- 768~320 -->
+    <div class="NEWS-title2"><p class="title-ch" style="padding-top:0px;">媒體報導</p></div>
+    <div class="line-column line2-center"><HR class="bottom-line line2"color="#3aa066" size="1"></div>  
+
+    <div class="NEWS-content">
+        <ul class="img row">
+            <li class="img-item col">
+                <img class="NEWS-content-img" src="/img/mczh-tw1920x700_small89662_997033173182.jpg">
+                <a class="NEWS-content-text">2019-04-02 北科大&德州大學-EMBA在職班</a>
+            </li>
+            <li class="img-item col">
+                <img class="NEWS-content-img" src="/img/mczh-tw1920x700_small87875_896194951232.jpg">
+                <a class="NEWS-content-text">2019-03-28 預見超高齡社會 北科大打造幸福健康產業加速中心</a>
+            </li>
+
+            <div class="NEWS-title2"><p class="title-ch" style="float: left;">媒體報導</p><p class="title-ch" style="float: right;">媒體報導</p></div>
+            <div class="line-column line2-center"><HR class="bottom-line line2"color="#3aa066" size="1"style="float: left;"><HR class="bottom-line line2"color="#3aa066" size="1"style="float: right;"></div>  
+
+            <li class="img-item col">
+                <img class="NEWS-content-img" src="/img/mczh-tw1920x700_small85197_51532334318.jpg">
+                <a class="NEWS-content-text">2019-03-22 冷凍空調技師年薪破百萬 北科大甲級證照錄取率傲全台</a>
+            </li>
+
+            <li class="img-item col">
+                    <img class="NEWS-content-img" src="/img/mczh-tw1920x700_small84923_266730908086.jpg">
+                    <a class="NEWS-content-text">台北科技大學攜手德州儀器 成立AloT教學中心</a>
+            </li>
+
+            <div class="NEWS-title2"><p class="title-ch" style="padding-top:0px;">得獎消息</p></div>
+            <div class="line-column line2-center"><HR class="bottom-line line2"color="#3aa066" size="1"></div>  
+
+            <li class="img-item col">
+                    <img class="NEWS-content-img" src="/img/mczh-tw1920x700_small89498_348911390737.jpg">
+                    <a class="NEWS-content-text">賀！男籃隊獲UBA一般組籃球聯賽全國冠軍，創大專一般組賽史首度連霸紀錄</a>
+            </li>
+            <li class="img-item col">
+                    <img class="NEWS-content-img" src="/img/mczh-tw1920x700_small83123_933120155398.jpg">
+                    <a class="NEWS-content-text">賀！自動化科技所榮獲2018智慧機器人競賽佳作</a>
+            </li>
+        </ul>
+    </div>
+</div><!-- 768~500 -->
+
+<div class="size500-320"><!-- 500~320 -->
+
+    <div class="NEWS-title2"><p class="title-ch" style="padding-top:0px;">媒體報導</p></div>
+    <div class="line-column line2-center"><HR class="bottom-line line2"color="#3aa066" size="1"></div>
+
+    <div class="card">
+        <img class="NEWS-content-img" src="/img/mczh-tw1920x700_small89662_997033173182.jpg">
+        <a class="NEWS-content-text">2019-04-02 北科大&德州大學-EMBA在職班2年雙學位</a>
+    </div>
+
+    <div class="card">
+        <img class="NEWS-content-img" src="/img/mczh-tw1920x700_small87875_896194951232.jpg">
+        <a class="NEWS-content-text">2019-03-28 預見超高齡社會 北科大打造幸福健康產業加速中心</a>
+    </div>
+
+    <div class="card">
+        <img class="NEWS-content-img" src="/img/mczh-tw1920x700_small85197_51532334318.jpg">
+        <a class="NEWS-content-text">2019-03-22 冷凍空調技師年薪破百萬 北科大甲級證照錄取率傲全台</a>
+    </div>
+
+
+    <div class="NEWS-title2"><p class="title-ch" style="padding-top:0px;">校務活動</p></div>
+    <div class="line-column line2-center"><HR class="bottom-line line2"color="#3aa066" size="1"></div>
+
+    <div class="card">
+        <img class="NEWS-content-img" src="/img/mczh-tw1920x700_small84923_266730908086.jpg">
+        <a class="NEWS-content-text">台北科技大學攜手德州儀器 成立AloT教學中心</a>
+    </div>
+
+
+    <div class="NEWS-title2"><p class="title-ch" style="padding-top:0px;">得獎消息</p></div>
+    <div class="line-column line2-center"><HR class="bottom-line line2"color="#3aa066" size="1"></div>
+    <div class="card">
+        <img class="NEWS-content-img" src="/img/mczh-tw1920x700_small89498_348911390737.jpg">
+        <a class="NEWS-content-text">賀！男籃隊獲UBA一般組籃球聯賽全國冠軍，創大專一般組賽史首度連霸紀錄</a>
+    </div>
+
+    <div class="card">
+        <img class="NEWS-content-img" src="/img/mczh-tw1920x700_small83123_933120155398.jpg">
+        <a class="NEWS-content-text">賀！自動化科技所榮獲2018智慧機器人競賽佳作</a>
+    </div>
+
+
+    <div class="NEWS-title2"><p class="title-ch" style="padding-top:0px;">校園連結</p></div>
+    <div class="line-column line2-center"><HR class="bottom-line line2"color="#3aa066" size="1"></div>
+    <div class="card" style="flex-direction: row;height: 250px;">
+        <div class="card-part"style="float: left;width: 35%;padding-left:10px;">
+            <a class="NEWS-content-text">行事曆</a>
+            <a class="NEWS-content-text">校外賃居</a>
+            <a class="NEWS-content-text">北科青年雙月刊</a>
+            <a class="NEWS-content-text">北科大菁英會</a>
+            <a class="NEWS-content-text">107周年校慶</a>
+            <a class="NEWS-content-text">捐贈興學</a>
+            <a class="NEWS-content-text">學術資源網</a>
+            <a class="NEWS-content-text">愛校認同卡</a>
+            <a class="NEWS-content-text">國際交流活動</a>
         </div>
+        <div class="card-part"style="width:65%;justify-content:space-between">
+                <a class="NEWS-content-text">台北聯合大學系統</a>
+                <a class="NEWS-content-text">校園紀念品 北科團購網</a>
+                <a class="NEWS-content-text">校園紀念品 北科酷樂網</a>
+                <a class="NEWS-content-text">技專校院招生策進總會</a>
+                <a class="NEWS-content-text">技專校院招生委員會聯合會</a>
+                <a class="NEWS-content-text">北科創新開發股份有限公司</a>
+        </div>
+    </div>
 
-    </div> 
+    <div class="NEWS-title2"><p class="title-ch" style="padding-top:0px;">宣導連結</p></div>
+    <div class="line-column line2-center"><HR class="bottom-line line2"color="#3aa066" size="1"></div>
 
-    <div id="dg" style="z-index: 9999; position: fixed ! important; right: 0px; bottom: 80px;">
+
+    <div class="card">
+        <a class="NEWS-content-text" style="text-align: center;">性別平等教育</a>
+        <a class="NEWS-content-text" style="text-align: center;">內部控制專區</a>
+        <a class="NEWS-content-text" style="text-align: center;">校務資訊專區</a>
+        <a class="NEWS-content-text" style="text-align: center;">檔案應用專區</a>
+        <a class="NEWS-content-text" style="text-align: center;">個資保護專區</a>
+        <a class="NEWS-content-text" style="text-align: center;">智慧財產權宣導</a>
+        <a class="NEWS-content-text" style="text-align: center;">自我評鑑結果專區</a>
+    </div>
+
+</div>
+
+
+
+        <div class="footer">
+            <div class="footer-text-zone">
+                <nav class="footer-link">
+                    <a class="footer-btn"href="#">北科大校園地圖</a>
+                    <a class="footer-btn"href="#">緊急聯絡電話</a>
+                    <a class="footer-btn"href="#">隱私權政策宣告</a>
+                    <a class="footer-btn"href="#">資訊安全政策</a>
+                    <a class="footer-btn"href="#">首頁問題回報</a>
+                </nav>
+                <h4 class="copyright">Copyright © 2019 國立臺北科技大學 10608 台北市忠孝東路三段一號 Tel: (886-2) 2771-2171</h4>
+            </div>
+            <div class="icon-zone">
+                <a href="https://www.facebook.com/"><img class="icon" src="/img/makefg (1).png"></a>
+                <a href="https://www.youtube.com/"><img class="icon" src="/img/makefg (3).png"></a>
+            </div>
+        </div>
+</div> 
+
+    <div class="dg">
         <table width=""100% style="position: absolute; width:260px; right: 0px; top: 0px;">
             <a href="login.html"><img src="/img/minICON.png"></a>
         </table>

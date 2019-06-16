@@ -1,6 +1,6 @@
 html{
-    width: 1200px;
-    height: 700px;
+    /* width: 1200px; */
+    /* height: 700px; */
     padding: 0 auto;
     margin: 0px auto;
     border: 0px;
@@ -29,7 +29,7 @@ html{
 
 
 
-  /*  */
+
 
 .header{
     display: flex;
@@ -122,8 +122,6 @@ html{
     
 }
 
-
-
 .login-background-img{
     margin: 0;
     padding: 0;
@@ -152,51 +150,6 @@ html{
 }
 /* footer */
 
-.footer{
-    width: 1200px;
-    height: 60px;
-    background-color:#3aa066;
-    margin: 0;
-    padding: 0; 
-  }
-  .footer-link{
-    font-family: 'Noto Sans TC', sans-serif;
-    font-size: 14px;
-    margin: 0;
-    padding: 0;
-    padding-top:10px;
-    margin-left: 74.372px;
-  }
-  .footer-btn{
-    color: #FEFEFE;
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
-    margin-right: 5px;
-  }
-  .copyright{
-    color: #FEFEFE;
-    text-decoration: none;
-    font-size: 14px;
-    margin: 0;
-    padding: 0;
-    margin-top: 9px;
-    margin-left: 74.372px;
-  }
-  
-  .icon-zone{
-  padding: 0;
-  margin-right: 80.949px;
-  margin-left: 64.782px;
-  margin-top: 10px;
-  margin-bottom: 38.9px;
-  }
-  .icon{
-    width: 36px;
-    height: 36px;
-    margin-left: 27.496px;
-  }
-
 .login-buttom{
     border-radius: 10px; 
     -webkit-border-radius: 10px; 
@@ -211,5 +164,8 @@ html{
     float: right;
     margin-right: 50px;
     margin-top:270px;
-
  }
+
+
+
+
