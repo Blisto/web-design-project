@@ -43,3 +43,27 @@
     text-align: center;
     color: #221814;
   }
+
+
+
+  .input-box
+  {
+    margin: 0;
+    padding: 0;
+    width: 349px;
+    height: 46px;
+    background-image: url(/img/圖片_登入_帳號輸入框.png);
+  }
+  .text_design
+  {
+    background-color: rgba(254, 254, 254, 0.1);
+    font-size: 23px;
+    width: 296px;
+    height: 45px;
+    float: right;
+    border: none;
+  }
+  .text_design:focus
+  {
+    outline: none;
+  }

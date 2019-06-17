@@ -1,6 +1,6 @@
 html{
   width: auto;
-  height: 2400px;
+  height: 2400px auto;
   max-width: 1200px;
   max-height: 2400px;
   padding: 0px auto;
@@ -271,6 +271,7 @@ padding: 0;
   margin-top: 47.436px;
   margin-left: 373.938px;
   background-color: #4aba78;
+  border-radius: 10px;
 }
 
 .NEWS-title2{
@@ -731,7 +732,7 @@ bottom: 80px;
     
     
   }
-  
+
   .title-nav-btn{
     font-family:'華康行書體';
     font-size: 16px;
@@ -1105,6 +1106,7 @@ bottom: 80px;
     margin-right: 50px;
     float: right;
     background-color: #4aba78;
+    border-radius: 10px;
   }
 
   .footer{
@@ -1874,6 +1876,7 @@ bottom: 80px;
     margin-right: 50px;
     float: right;
     background-color: #4aba78;
+    border-radius: 10px;
   }
 
   .footer{

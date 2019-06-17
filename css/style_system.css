@@ -1,10 +1,3 @@
-html{
-    width: 100%;
-    height: 100%;
-    padding: 0px;
-    margin: 0px auto;
-    border: 0px;
-}
 
 @font-face{
     font-family:'華康行書體';
@@ -24,80 +17,33 @@ html{
 }
 
 
-.container{
-    width:100%;
-    height:100%;
-    margin:0px;
-    padding:0px;
-    background-repeat:no-repeat;
-    background-size: cover;
-    background-image: url(/img/圖片_資訊首頁_background.png);
-    background-color:rgba(150, 150, 150, 0.068);
-}
-.header{
-    display:flex;
-    justify-content: space-around;
-    margin:0 auto ;
-    padding:0 auto;
-    width:100%;
-}
 
-.header-left{
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    padding: 0 auto;
-    align-items: center;
-}
-
-.header-left-logo{
-    width:383px;
-    height:61.825px;
-    margin-left:42.75px;
-    margin-top: 30.147px;
-    padding:0px;
-}
-
-.header-left-title{
-    text-align: center;
-    margin: 0 auto;
-    padding: 0 auto;
-}
-
+/* ////////////////////////////////////////////////////////////////// */
 .header-left-chititle{
     font-family: '華康行書體';
     font-size: 20px;
     color: #E26542;
     margin-top: 24px;
     padding:0px auto;
+    white-space: nowrap;
+}
+
+.header-left-title{
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 auto;
+    display: flex;
+    width: 90%;
+    justify-content: flex-end;
 }
 .header-left-engtitle{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 16px;
     color:#626262;
-    margin-bottom: 6px;
-    margin-top: 6px;
     padding:0px;
+    margin-top: 24px;
+    white-space: nowrap;
 }
-
-.header-right{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: right;
-    margin: 0 auto;
-    padding: 0 auto;
-}
-
-.header-right-top-bar{
-    margin-right: 60px;
-    margin-top:53px;
-    padding: 0 auto;
-    font-family: sans-serif,'華康行書體';
-    color:#494848;
-    font-size: 14px;
-}
-
 .header-right-nav{
     font-size:20px;
     margin: 0px;
@@ -107,59 +53,130 @@ html{
     -webkit-box-shadow: 5px 4px 6px #333333; 
     -moz-box-shadow: 5px 4px 6px #333333; 
     white-space: nowrap;
-    /* margin-top: 54px;
-    margin-right:43.5px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 31.5px;  */
     border-top-left-radius:10px;
     border-top-right-radius:10px;
     font-family: '華康行書體';
     background-color: #fff;
 }
-
-.header-link{
-    color: #000;
-    text-decoration: none;
-}
-
 .header-nav-link{
     color: #000;
     text-decoration: none;
     padding-right:31.5px;
 
 }
-
 .header-buttom-line{
-    width:1114px ;
+    width:95% ;
     size: 1px;
     color:000;
     margin:0 auto;
     padding: 0 auto;
 }
+/* ////////////////////////////////////////////////////////////////// */
+/* ////////////////////////        日曆 */
+.calendar{
+	background:#fff;
+    box-shadow:0px 1px 1px rgba(0,0,0,0.1);
+    min-width: 339px;
+}
+.body-list ul{
+	width:80%;
+	font-family:arial;
+	font-weight:bold;
+    font-size:18px;
+    margin-right: 4px;
+}
+.body-list ul li{
+	width:14.28%;
+	height:24px;
+	line-height:24px;
+	list-style-type:none;
+	display:block;
+	box-sizing:border-box;
+	float:left;
+	text-align:center;
+}
+.lightgrey{
+	color:#a8a8a8; /*浅灰色*/
+}
+.darkgrey{
+	color:#565656; /*深灰色*/
+}
+.green{
+	color:#364FA1; /*绿色*/
+}
+.greenbox{
+	border:1px solid #6ac13c;
+	background:#e9f8df; /*浅绿色背景*/
+}
+
+.d5
+{   
+    width: 100%;
+    height:80%;
+}
+
+.date-title
+{
+    font-size: 23px;
+    text-align: center;
+}
+.tbox
+{
+    
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height:20%;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* 日曆 */
 
 
+@media (min-width:768px){
+
+.container{
+    width:100%;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-image: url(/img/圖片_資訊首頁_background.png);
+
+}
+
+.eff-container{
+    width:100%;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    background-color:rgba(241, 241, 241, 0.5);
+}
 
 
 .layout{
+    widows: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin:0px auto;
     padding:0px auto;
-    height: 950px;
+    height: 900px;
 }
+
 .layout-content{
+    width: 76%;
+    height: 170px;
     display: flex;
-    margin-top: 50.5px;
-    padding: 0 auto;
-    box-shadow: 7px 7px 31px #333333; 
-    -webkit-box-shadow: 7px 7px 31px #333333; 
-    -moz-box-shadow: 7px 7px 31px #333333; 
-    
+    margin-top: 10px;
+    margin-bottom: 10px;
+
 }
 .layout-content-title{
-    width: 95.25px;
+    width: 13%;
+    height: 100%;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -169,21 +186,24 @@ html{
     font-family: '華康行書體';
 }
 .layout-content-block{
-    width:826.742px;
+    width:87%;
+    height: 100%;
     background-color:#FEFEFE;
-    opacity: 0.85;
 }
 
 .layout-block-flex{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
+    /* flex-wrap: wrap; */
 }
 
 .layout-content-flex-email{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding-bottom: 10px;
 }
 
 .block-mail{
@@ -201,13 +221,11 @@ html{
     display: flex;
     align-items: center;
     height: 100%;
-    width: 20%;
+    width: 45%;
     margin: 0;
     padding: 0;
     justify-content: space-between;
-    /* border-color: #626262;
-    border-bottom-style: solid;
-    border-width: 1px; */
+    margin-left: 10px;
 }
 .block-mail-title{
     font-family: sans-serif;
@@ -215,24 +233,25 @@ html{
     display: flex;
     align-items: center;
     height: 100%;
-    width: 80%;
+    width: 45%;
     margin: 0;
     padding: 0;
-    justify-content: space-around;
+
 }
 
 .mail-bottom-line{
     margin: 0;
     padding: 0;
     height: 100%;
-    width: 70%;
+    width: 80%;
     border-color: #626262;
     border-bottom-style: solid;
     border-width: 1px; 
-    float:right;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 .title-line{
-    width: 90%;
+    width: 80%;
 }
 
 
@@ -241,71 +260,22 @@ html{
     background-color:#FEFEFE;
     opacity: 0.85;
     margin-right:58px;
+    height: 100%;
 }
 
 .layout-content-block-calender{
-    width:360px;
-    height:218.405px;
+    width:100%;
+    height:100%;
     opacity: 0.85;
     background-color:#FEFEFE;
-
-
 }
 
 .layout-flex{
-    margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
+    height: auto;
+    width: 84%;
 }
-
-/* footer */
-
-  .footer{
-    width: 100%;
-    height: 60px;
-    background-color:#3aa066;
-    margin: 0;
-    padding: 0; 
-  }
-  .footer-link{
-    font-family: 'Noto Sans TC', sans-serif;
-    font-size: 14px;
-    margin: 0;
-    padding: 0;
-    padding-top:10px;
-    margin-left: 74.372px;
-  }
-  .footer-btn{
-    color: #FEFEFE;
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
-    margin-right: 5px;
-  }
-  .copyright{
-    color: #FEFEFE;
-    text-decoration: none;
-    font-size: 14px;
-    margin: 0;
-    padding: 0;
-    margin-top: 9px;
-    margin-left: 74.372px;
-  }
-  
-  .icon-zone{
-  padding: 0;
-  margin-right: 80.949px;
-  margin-left: 64.782px;
-  margin-top: 10px;
-  margin-bottom: 38.9px;
-  }
-  .icon{
-    width: 36px;
-    height: 36px;
-    margin-left: 27.496px;
-  }
-/*  */
-
 
 .block-item{
     font-family: '標楷體';
@@ -323,6 +293,8 @@ html{
     border-radius: 10px;
     border-width: 1px;
     border-color:#626262;
+    margin:4px;
+
 }
 
 .bulletin-column{
@@ -346,11 +318,12 @@ html{
 .bulletin-item{
     font-family: sans-serif,'標楷體';
     font-size: 16px;
-    color: 333333;
+    color: #333333;
 }
 
 .two-column{
-    margin-right: 50px;
+    margin-right:0;
+    width:60%;
 }
 
 .squre-item-zone{
@@ -393,4 +366,350 @@ html{
     margin: 0;
     padding: 0;
     border: 0;
+}
+
+.shadowAndRadius
+{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 1px 1px 3px #3f3f3f; 
+-webkit-box-shadow: 1px 1px 3px #3f3f3f; 
+-moz-box-shadow: 1px 1px 3px #3f3f3f;
+}
+
+
+
+.d1{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.d2
+{
+    display: none;
+}
+
+.d3
+{
+    display: none;
+}
+
+}
+
+
+@media (min-width:500px)and (max-width: 768px){
+
+
+
+    
+    .container{
+        width:100%;
+        height:100%;
+        margin:0px;
+        padding:0px;
+        background-repeat:no-repeat;
+        background-size: cover;
+        background-image: url(/img/圖片_資訊首頁_background.png);
+
+    }
+    .eff-container{
+        width:100%;
+        height:100%;
+        margin:0px;
+        padding:0px;
+        background-color:rgba(241, 241, 241, 0.5);
+    }
+    .layout{
+        widows: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin:0px auto;
+        padding:0px auto;
+        height: 1050px;
+    }
+    
+    .layout-content{
+        width: 76%;
+        height: 170px;
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    
+    }
+    .layout-content-title{
+        width: 13%;
+        height: 100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-color:#494848;
+        color:#FEFEFE;
+        font-size:20px;
+        font-family: '華康行書體';
+    }
+    .layout-content-block{
+        width:87%;
+        height: 100%;
+        background-color:#FEFEFE;
+    }
+    
+    .layout-block-flex{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    
+    .layout-content-flex-email{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-bottom: 10px;
+    }
+    
+    .block-mail{
+        display: flex;
+        align-items: center;
+        height: 70%;
+        width:100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .block-mail-from{
+        font-family: sans-serif;
+        color:#080808;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 45%;
+        margin: 0;
+        padding: 0;
+        justify-content: space-between;
+        margin-left: 10px;
+    }
+    .block-mail-title{
+        font-family: sans-serif;
+        color:#080808;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 45%;
+        margin: 0;
+        padding: 0;
+        
+    }
+    
+    .mail-bottom-line{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 80%;
+        border-color: #626262;
+        border-bottom-style: solid;
+        border-width: 1px; 
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .title-line{
+        width: 80%;
+    }
+    
+    
+    .layout-content-block-squre{
+        width:320.5px;
+        background-color:#FEFEFE;
+        opacity: 0.85;
+        margin-right:58px;
+        height: 100%;
+    }
+    
+    .layout-content-block-calender{
+        width:100%;
+        height:100%;
+        opacity: 0.85;
+        background-color:#FEFEFE;
+    
+    
+    }
+    
+    .layout-flex{
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+        width: 76%;
+        justify-content: space-between;
+    }
+    
+    .block-item{
+        font-family: '標楷體';
+        color: #333333;
+        font-size:16px;
+        margin: 0;
+        padding: 0;
+        min-height: 65px;
+        min-width: 65px;
+        max-height: 65px;
+        max-width: 65px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-style: solid;
+        border-radius: 10px;
+        border-width: 1px;
+        border-color:#626262;
+        margin:4px;
+    }
+    
+    .bulletin-column{
+    
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 85%;
+    
+    }
+    .bulletin-column-content{
+        list-style: none;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .bulletin-item{
+        font-family: sans-serif,'標楷體';
+        font-size: 16px;
+        color: #333333;
+    }
+    
+    .two-column{
+        margin-right:0;
+        width: 110%;
+        margin-left: 50px;
+    }
+    
+    .squre-item-zone{
+        width: 100%;
+        height: 85%;
+        margin: 0;
+        padding: 0;
+    
+    }
+    
+    .squre-list{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    
+    }
+    
+    .squre-list-item{
+        width: 100%;
+        height: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .squre-list-bottom-line{
+        height: 100%;
+        width: 65%;
+        margin: 0;
+        padding: 0;
+        border-color: #626262;
+        border-bottom-style: solid;
+        border-width: 1px; 
+    }
+    .dot-icon{
+        height: 20px;
+        width: 20px;
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    
+    .shadowAndRadius
+    {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        box-shadow: 1px 1px 3px #3f3f3f; 
+    -webkit-box-shadow: 1px 1px 3px #3f3f3f; 
+    -moz-box-shadow: 1px 1px 3px #3f3f3f;
+    }
+
+
+    .d1{
+        display: none;
+
+    }
+    
+    .d2
+    {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .d3
+    {
+        display: none;
+    }
+    .sizeMax-500
+    {
+        display: flex;
+    }
+
+    .widthSetting
+    {
+        width: 100%;
+    }
+
+}
+
+
+
+@media (min-width:500px)and (max-width: 615px){
+
+.d1{
+    display: none;
+
+}
+
+.d2
+{
+    display: none;
+}
+
+.d3
+{   
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+}
+
+
+@media (min-width:320px)and (max-width: 500px)
+{
+    .sizeMax-500{
+        display: none;
+    }
+
 }
