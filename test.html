@@ -6,8 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/test.css">
     <title>Document</title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
+    <script src="/js/jquery-3.4.0.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/login.js"></script>
+    <script src="/js/slidebox.js"></script>
 </head>
-<body>
+<body style="display: flex;flex-direction: column; align-items: center">
     <div class="tt" style="display: flex;">
 
         <div class="card">
@@ -19,8 +27,10 @@
             <a class="NEWS-content-text">　</a>
             <div class="input-box">
                 <form name="myForm" style="display: flex; flex-direction:column;">
-                    <input type="text" name="myText" value="" class="text_design">
-                    <input type="text" name="myText" value="" class="text_design">
+                    　　<iframe id="rfFrame" name="rfFrame" src="about:blank" style="display:none;"></iframe>
+                    <input type="text" id="ACCOUNT" value="" class="text_design">
+                    <input type="password" id="PWD" value="" class="text_design">
+                    <button type="submit" id="SignUpBtn">Login</button>
                     <!-- <input type="button" value="請點擊" onClick="myFun()"> -->
                 </form>
             </div>
@@ -28,9 +38,24 @@
         </div>
 
 
-
     </div>
 
+    <div style="height: 100px;width:70%;background-color: blue"></div>
+
+    <div style="height: 600px;width:70%;background-color: rgb(77, 218, 49)">
+        <div class="slide-buttom55">
+
+        </div>
+        <div class="slideBox55">
+
+        </div>
+    
+    </div>
+
+
+
+
+    <div style="height: 100px;width:70%;background-color: blue"></div>
 
 
 </body>

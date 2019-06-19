@@ -9,7 +9,11 @@
          url(/font/Gabriola.woff)format("woff");
 }
 
-
+.button-design2
+{
+  background-color: #3aa066;
+  border:0;
+}
 
 @media (min-width:768px){
 
@@ -260,6 +264,10 @@ display: flex;
       float: right;
       border: none;
     }
+
+
+
+
     .text_design:focus
     {
       outline: none;

@@ -56,14 +56,31 @@
   }
   .text_design
   {
-    background-color: rgba(254, 254, 254, 0.1);
+    background-color: rgba(252, 237, 22, 0.952);
     font-size: 23px;
     width: 296px;
     height: 45px;
     float: right;
-    border: none;
+
   }
   .text_design:focus
   {
-    outline: none;
+  
   }
+
+
+.slide-buttom55
+{
+  height: 40px;
+  width: 200px;
+  background-color: aqua;
+}
+
+
+.slideBox55
+{
+  height: 300px;
+  width: 200px;
+  background-color: rgb(255, 30, 0);
+
+}

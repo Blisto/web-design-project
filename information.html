@@ -4,12 +4,18 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>學生學習歷程入口網站</title>
+        <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
         <script src="/js/jquery-3.4.0.min.js"></script>
         <script src="/js/main.js"></script>
+        <script src="/js/login.js"></script>
+        <script src="/js/calendar.js"></script>
         <meta name="567" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
         <link rel="stylesheet" type="text/css" href=css/style_system.css>
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" type="text/css" media="screen" href="/css/style.css">
+
     </head>
     <body>
         <div class="container"><div class="eff-container">
@@ -89,11 +95,11 @@
 
 
 
-                <div class="layout-content">
-                    <div class="layout-content-title">
-                        <div class="layout-content-title-text">公告</div>
+                <div class="layout-content"style="height: 190px;">
+                    <div class="layout-content-title"style="height: 190px;">
+                        <div class="layout-content-title-text forceTitleHeigh">公告</div>
                     </div>
-                    <div class="layout-content-block shadowAndRadius">
+                    <div class="layout-content-block shadowAndRadius"id="bbx1"style="height: 190px;">
                         <div class="bulletin-column">
                             <ul class="bulletin-column-content">
                                 <li class="bulletin-item">【107-2履歷診療、模擬面試活動】開放報名，歡迎本校大三、四生踴躍參與！</li>
@@ -102,17 +108,18 @@
                                 <li class="bulletin-item">徵件！【創意北科陶瓷杯墊設計比賽】歡迎踴躍參加</li>
                             </ul>
                         </div>
-                        <div style="height:15%; width:93%; text-align: right; font-family: 'Gabriola'; font-size: 20px;">...more</div>
+                        <div style="height:20px; width:93%; text-align: right; font-family: 'Gabriola'; font-size: 20px;">...more</div>
                     </div>                    
                 </div>
 
 
 
-                <div class="layout-content"style="height:auto;">
-                    <div class="layout-content-title">
-                        <div class="layout-content-title-text">資訊<br>系統</div>
+                <div class="layout-content addHeightest">
+                    <div class="layout-content-title addHeightest">
+                            <div class="layout-content-title-text switchTo320">資訊<br>系統</div>
+                            <div class="layout-content-title-text size500-320  forceTitleHeigh">資訊系統</div>
                     </div>
-                    <div class="layout-content-block shadowAndRadius" style="display: flex; align-items: center;">
+                    <div class="layout-content-block shadowAndRadius addHeightest" style="display: flex; align-items: center;">
                         <div class="layout-block-flex"style="height:auto;">
                             <div class="d1">
                                     <div class="block-item">教務<br>系統</div>
@@ -165,12 +172,13 @@
 
 
 
-                <div class="layout-content">
+                <div class="layout-content forceadject">
                     <div class="layout-content-title">
-                        <div class="layout-content-title-text">電<br>子<br>郵<br>件</div>
+                        <div class="layout-content-title-text switchTo320">電<br>子<br>郵<br>件</div>
+                        <div class="layout-content-title-text size500-320 forceTitleHeigh">電子郵件</div>
                     </div>
 
-                    <div class="layout-content-block shadowAndRadius">
+                    <div class="layout-content-block shadowAndRadius forceadject">
 
 
 
@@ -221,30 +229,54 @@
 
                 <div class="layout-flex">
                     <div class="layout-content two-column"style="height:218px;">
-                        <div class="layout-content-title"style="width:15%;">
-                            <div class="layout-content-title-text">待<br>辦<br>事<br>項</div>
+                        <div class="layout-content-title">
+                            <div class="layout-content-title-text switchTo320">待<br>辦<br>事<br>項</div>
+                            <div class="layout-content-title-text size500-320  forceTitleHeigh">待辦事項</div>
                         </div>
-                        <div class="layout-content-block-squre shadowAndRadius" style="height:218px;width:85%;">
+                        <div class="layout-content-block-squre shadowAndRadius">
 
                             <div class="squre-item-zone">
                                 <ul class="squre-list">
                                     <li class="squre-list-item">
-                                        <img class="dot-icon" src=img\dot.png> <div class="squre-list-bottom-line"></div>
+                                        <img class="dot-icon" src=img\dot.png> 
+                                        <div class="squre-list-bottom-line">
+                                            <form name="myForm">
+                                                <input type="text" name="myText" id="event-1" value="" class="text_design">
+                                            </form>
+                                        </div>
                                     </li>
                                     <li class="squre-list-item">
-                                        <img class="dot-icon" src=img\dot.png> <div class="squre-list-bottom-line"></div>
+                                        <img class="dot-icon" src=img\dot.png>
+                                        <div class="squre-list-bottom-line">
+                                                <form name="myForm">
+                                                        <input type="text" name="myText" id="event-2" value="" class="text_design">
+                                                    </form>
+                                        </div>
                                     </li>
                                     <li class="squre-list-item">
-                                        <img class="dot-icon" src=img\dot.png> <div class="squre-list-bottom-line"></div>
+                                        <img class="dot-icon" src=img\dot.png>
+                                        <div class="squre-list-bottom-line">
+                                                <form name="myForm">
+                                                        <input type="text" name="myText" id="event-3" value="" class="text_design">
+                                                    </form>
+                                        </div>
                                     </li>
                                     <li class="squre-list-item">
-                                        <img class="dot-icon" src=img\dot.png> <div class="squre-list-bottom-line"></div>
+                                        <img class="dot-icon" src=img\dot.png>
+                                        <div class="squre-list-bottom-line">
+                                                <form name="myForm">
+                                                        <input type="text" name="myText" id="event-4" value="" class="text_design">
+                                                    </form>
+                                        </div>
                                     </li>
                                 </ul>
 
                             </div>
 
-                            <div style="height:15%; width:93%; text-align: right; font-family: 'Gabriola';font-size: 20px;">...more</div>
+                            <div style="height:10%; width:93%; text-align: right; font-family: 'Gabriola';font-size: 20px; margin-top: 5px;">
+                                <button type="submit" class="button-design" id="save-event">Save</button>
+                            </div>
+                            
                         </div>
                         
                     </div>
@@ -252,7 +284,8 @@
 
                     <div class="layout-content widthSetting" style="height: 218px;">
                         <div class="layout-content-title">
-                            <div class="layout-content-title-text">行<br>事<br>曆</div>
+                            <div class="layout-content-title-text switchTo320">行<br>事<br>曆</div>
+                            <div class="layout-content-title-text size500-320   forceTitleHeigh">行事曆</div>
                         </div>
                         <div class="layout-content-block-calender calendar">
 
@@ -289,12 +322,208 @@
 
 
 
-
-
-
-
             </div>
 
+
+
+            <div class="size500-320"></div>
+            <!-- <div class="layout size500-320" style="height: 1250px">
+                    <hr class="header-buttom-line">
+
+                    <div class="layout-content" style="height: 240px;">
+                        <div class="layout-content-title" style="height: 50px;">
+                            <div class="layout-content-title-text">公告</div>
+                        </div>
+                        <div class="layout-content-block" style="height: 190px;">
+                            <div class="bulletin-column">
+                                <ul class="bulletin-column-content">
+                                    <li class="bulletin-item">【107-2履歷診療、模擬面試活動】開放報名，歡迎本校大三、四生踴躍參與！</li>
+                                    <li class="bulletin-item">【重要公告】107學年度第2學期英文期中會考考試時間及地點</li>
+                                    <li class="bulletin-item">107學年度第2學期起,在學碩博士班學生學位考試前應完成論文原創性比對作業</li>
+                                    <li class="bulletin-item">徵件！【創意北科陶瓷杯墊設計比賽】歡迎踴躍參加</li>
+                                </ul>
+                            </div>
+                            <div style="height:20px; width:93%; text-align: right; font-family: 'Gabriola'; font-size: 20px;">...more</div>
+                        </div>                    
+                    </div>
+    
+    
+    
+                    <div class="layout-content"style="height: 275px">
+                        <div class="layout-content-title">
+                            <div class="layout-content-title-text">資訊系統</div>
+                        </div>
+                        <div class="layout-content-block" style="display: flex; align-items: center;height: 225px">
+                            <div class="layout-block-flex"style="height:auto;">
+                                <div class="d1">
+                                        <div class="block-item">教務<br>系統</div>
+                                        <div class="block-item">學務<br>系統</div>
+                                        <div class="block-item">總務<br>系統</div>
+                                        <div class="block-item">研發<br>系統</div>
+                                        <div class="block-item">人事<br>系統</div>
+                                        <div class="block-item">網路<br>管理</div>
+                                        <div class="block-item">資訊<br>服務</div>
+                                        <div class="block-item">主計<br>系統</div>
+                                        <div class="block-item">圖書館<br>系統</div>
+                                        <div class="block-item">活動<br>報名</div>
+                                </div>
+                                <div class="d2">
+                                        <div class="block-item">教務<br>系統</div>
+                                        <div class="block-item">學務<br>系統</div>
+                                        <div class="block-item">總務<br>系統</div>
+                                        <div class="block-item">研發<br>系統</div>
+                                        <div class="block-item">人事<br>系統</div>
+                                </div>
+                                <div class="d2">
+                                        <div class="block-item">網路<br>管理</div>
+                                        <div class="block-item">資訊<br>服務</div>
+                                        <div class="block-item">主計<br>系統</div>
+                                        <div class="block-item">圖書館<br>系統</div>
+                                        <div class="block-item">活動<br>報名</div>
+                                </div>
+                                <div class="d3">
+                                        <div class="block-item"style="font-size: 30px;">◀</div>
+                                        <div class="block-item">教務<br>系統</div>
+                                        <div class="block-item">學務<br>系統</div>
+                                        <div class="block-item">總務<br>系統</div>
+                                </div>
+                                <div class="d3">
+                                        <div class="block-item">研發<br>系統</div>
+                                        <div class="block-item">人事<br>系統</div>
+                                        <div class="block-item">網路<br>管理</div>
+                                        <div class="block-item">資訊<br>服務</div>
+                                </div>
+                                <div class="d3">
+                                        <div class="block-item">主計<br>系統</div>
+                                        <div class="block-item">圖書館<br>系統</div>
+                                        <div class="block-item">活動<br>報名</div>
+                                        <div class="block-item" style="font-size: 30px;">▶</div>
+                                </div>
+                            </div>                  
+                        </div>
+                    </div>
+    
+    
+    
+    
+                    <div class="layout-content"style="height:240px">
+                        <div class="layout-content-title">
+                            <div class="layout-content-title-text">電子郵件</div>
+                        </div>
+                        <div class="layout-content-block" style="height:190px" >
+    
+    
+
+                            <div class="layout-content-flex-email"style="height:170px" >
+                                <div class="block-mail">
+                                    <div class="block-mail-from">
+                                        from:
+                                        <div class="mail-bottom-line"></div>
+                                    </div>
+                                    <div class="block-mail-title">
+                                        Title:
+                                        <div class="mail-bottom-line title-line"></div>
+                                    </div>
+                                </div>
+                                <div class="block-mail">
+                                    <div class="block-mail-from">
+                                        from: 
+                                        <div class="mail-bottom-line"></div> 
+                                    </div>
+                                    <div class="block-mail-title">
+                                        Title:
+                                        <div class="mail-bottom-line title-line"></div>
+                                    </div>
+                                </div>
+                                <div class="block-mail">
+                                    <div class="block-mail-from">
+                                        from:
+                                        <div class="mail-bottom-line"></div>
+                                    </div>
+                                    <div class="block-mail-title">
+                                        Title:
+                                        <div class="mail-bottom-line title-line"></div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+    
+    
+    
+                        </div>
+                    </div>
+    
+    
+    
+    
+    
+                    <div class="layout-flex">
+                        <div class="layout-content">
+                            <div class="layout-content-title">
+                                <div class="layout-content-title-text">待辦事項</div>
+                            </div>
+                            <div class="layout-content-block-squre">
+    
+                                <div class="squre-item-zone">
+                                    <ul class="squre-list">
+                                        <li class="squre-list-item">
+                                            <img class="dot-icon" src=img\dot.png> <div class="squre-list-bottom-line"></div>
+                                        </li>
+                                        <li class="squre-list-item">
+                                            <img class="dot-icon" src=img\dot.png> <div class="squre-list-bottom-line"></div>
+                                        </li>
+                                        <li class="squre-list-item">
+                                            <img class="dot-icon" src=img\dot.png> <div class="squre-list-bottom-line"></div>
+                                        </li>
+                                        <li class="squre-list-item">
+                                            <img class="dot-icon" src=img\dot.png> <div class="squre-list-bottom-line"></div>
+                                        </li>
+                                    </ul>
+    
+                                </div>
+    
+                                <div style="height:15%; width:93%; text-align: right; font-family: 'Gabriola';font-size: 20px;">...more</div>
+                            </div>
+                            
+                        </div>
+    
+    
+                        <div class="layout-content widthSetting" style="height: 218px;">
+                            <div class="layout-content-title">
+                                <div class="layout-content-title-text">行事曆</div>
+                            </div>
+                            <div class="layout-content-block-calender calendar">
+    
+                                        <div class="tbox">
+                                            <a href="" id="prev" style="text-decoration: none; "class="green date-title">◀</a>
+                                            <div style="display: flex;">
+                                            <h2 class="green date-title" id="calendar-year">Year</h2>
+                                            <div style="width: 15px"></div>
+                                            <h1 class="green date-title" id="calendar-title" style="padding-top: 4px;">Month</h1>
+                                            </div>
+                                            <a href="" id="next" style="text-decoration: none;"class="green date-title">▶</a>
+                                        </div>
+                                        <div class="d5">
+                                            <div class="lightgrey body-list">
+                                              <ul>
+                                                <li style="color:#000000;font-weight:bolder;">一</li>
+                                                <li style="color:#000000;font-weight:bolder;">二</li>
+                                                <li style="color:#000000;font-weight:bolder;">三</li>
+                                                <li style="color:#000000;font-weight:bolder;">四</li>
+                                                <li style="color:#000000;font-weight:bolder;">五</li>
+                                                <li style="color:#000000;font-weight:bolder;">六</li>
+                                                <li style="color:#000000;font-weight:bolder;">日</li>
+                                              </ul>
+                                            </div>
+                                            <div class="darkgrey body-list">
+                                              <ul id="days">
+                                              </ul>
+                                            </div>
+                                        </div>
+                            </div>
+                        </div>
+                    </div>
+            </div> -->
 
 
 
