@@ -1,4 +1,5 @@
-var firebaseConfig = {
+$(document).ready(function(){
+  var firebaseConfig = {
     apiKey: "AIzaSyBsJMxwhIgT_098MVwo65-wc9dod-luwZA",
     authDomain: "test-3932f.firebaseapp.com",
     databaseURL: "https://test-3932f.firebaseio.com",
@@ -9,71 +10,108 @@ var firebaseConfig = {
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-  var account;
-  var pwd;
-  var registerSmtBtn;
+  var dbRef = firebase.database();
+
+  const $email = $('#ACCOUNT');
+  const $password = $('#PWD');
+  const $btnSignIn = $('#SignUpBtn');
+  //const $btnSignOut = $('#signoutSmtBtn');
+  const $btnSubmit = $('#save-event');
+  //const $signInfo = $('#sign-info');
+  const $btnLogout = $('#signoutSmtBtn');
+  //const avatarImage = $('.avatar-image');
+  //const avatarName = $('.avatar-name');
+  //const avatarEmail = $('.avatar-email');
+  //$signInfo.html("");
+  const $eventbox1=$('#event-1');
+  const $eventbox2=$('#event-2');
+  const $eventbox3=$('#event-3');
+  const $eventbox4=$('#event-4');
+  
+
+  $btnSignIn.click(function (e) {
+    const email = $email.val();
+    const pass = $password.val();
+    const auth = firebase.auth();
+    // signIn
+    auth.signInWithEmailAndPassword(email,pass)
+    .then(function (e) {
+      window.location.href = "./information.html";
+    })
+    .catch(function (e) {
+      console.log(e.message);
+    });
+  });
 
 
-// $('#SignUpBtn').ready(function(){
+  $btnSubmit.click(function () {
 
-//     account = document.getElementById("ACCOUNT");
-//     pwd = document.getElementById("PWD");
-//     registerSmtBtn = document.getElementById("SignUpBtn");
-//     registerSmtBtn.addEventListener("click", function(){
-//             console.log(account.value);
-//             JS:document.forms[0].target="rfFrame";
-//         firebase.auth().createUserWithEmailAndPassword(account.value, pwd.value).catch(function(error) {
-//         // Handle Errors here.
-//         JQuery:$("#f2").attr("target","rfFrame");
-//         var errorCode = error.code;
-//         var errorMsg = error.message;
-//         console.log(errorMsg);
-//         });
-//     },true);
+    const user = firebase.auth().currentUser;
 
-// });
+    console.log(user);
+    dbRef.ref(user.uid+'/event1').set($eventbox1.val());
+    dbRef.ref(user.uid+'/event2').set($eventbox2.val());
+    dbRef.ref(user.uid+'/event3').set($eventbox3.val());
+    dbRef.ref(user.uid+'/event4').set($eventbox4.val());
 
-$(document).ready(function(){
-//登入
-var accountL = document.getElementById("ACCOUNT");
-var pwdL = document.getElementById("PWD");
-var loginSmtBtn = document.getElementById("SignUpBtn");
-loginSmtBtn.addEventListener("click",function(){
-  console.log(accountL.value);
-  JS:document.forms[0].target="rfFrame";
-	firebase.auth().signInWithEmailAndPassword(accountL.value, pwdL.value).catch(function(error) {
-  	// Handle Errors here.
-  	var errorCode = error.code;
-  	var errorMessage = error.message;
-  	console.log(errorMessage);
-  })
-},false);
-
-
-
-
-//登出
-var signoutSmtBtn = document.getElementById("signoutSmtBtn");
-signoutSmtBtn.addEventListener("click",function(){
-	firebase.auth().signOut().then(function() {
-		console.log("User sign out!");
-	}, function(error) {
-  	console.log("User sign out error!");
-	})
-},false);
+    console.log("Update successful.");
+  });
 
 
 
-var user;
-firebase.auth().onAuthStateChanged(function(user) {
-  if (user) {
-  	user = user;
-    console.log("User is logined", user)
-  } else {
-  	user = null;
-    console.log("User is not logined yet.");
-  }
+
+
+
+
+    $btnLogout.click(function () {
+      firebase.auth().signOut();
+      console.log("Logout.");
+      window.location.href = "./login.html";
+    });
+  
+
+
+    
+
+
+
+
+    firebase.auth().onAuthStateChanged(function (user) {
+      if (user) {
+        console.log(user);
+        console.log("i am bad man"+user.uid);
+        dbRef.ref(user.uid+'/event1').once('value',function(snapshot){
+          $eventbox1.val(snapshot.val());
+        });
+        dbRef.ref(user.uid+'/event2').once('value',function(snapshot){
+          $eventbox2.val(snapshot.val());
+        });
+        dbRef.ref(user.uid+'/event3').once('value',function(snapshot){
+          $eventbox3.val(snapshot.val());
+        });
+        dbRef.ref(user.uid+'/event4').once('value',function(snapshot){
+          $eventbox4.val(snapshot.val());
+        });
+        user.providerData.forEach(function (profile) {
+          console.log("  Provider-specific UID: " + profile.uid);
+        });
+        
+      } else {
+        console.log("not logged in");
+      }
+    });
+
 });
 
 
-});
+
+
+
+// var signoutSmtBtn = document.getElementById("signoutSmtBtn");
+// signoutSmtBtn.addEventListener("click",function(){
+//     firebase.auth().signOut().then(function() {
+//         console.log("User sign out!");
+//     }, function(error) {
+//     console.log("User sign out error!");
+//     })
+// },false);
